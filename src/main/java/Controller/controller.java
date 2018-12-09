@@ -28,6 +28,6 @@ public class controller {
     @RequestMapping(value = "/")
     public String hello(Model model){
         model.addAttribute("hello_spring", "HI spring! I am model!"); // Model 값 설정
-        return "index"; // ViewResolver 한테 전달
+        return "index"; // ViewResolver 한테 전달 (View 로 사용되는 jsp 이름)
     }
 }

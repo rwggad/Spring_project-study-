@@ -22,6 +22,7 @@
         <servlet-name>dispatcher</servlet-name>  <!-- 서블릿 명칭 -->
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> <!-- 가져오기 -->
         <!-- 초기 스프링 설정파일 (스프링 컨테이너 지정)
+         DispatcherServlet 을 서블릿으로 등록함
          HandlerMapping, HandlerAdapter.. 등등은 자동으로 생성된다 ㅎ
         -->
         <init-param>

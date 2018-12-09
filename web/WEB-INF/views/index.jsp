@@ -12,6 +12,15 @@
     <title>$Title$</title>
   </head>
   <body>
-  Hello spring world
+  <!--
+    MVC 작동 방식 3
+
+    사용자에게 요청받아 모든 과정을 거쳐서 View 해준다.
+
+    <%--
+     ${} 값은 controller 에서 넘겨 준 Model 값
+    --%>
+  -->
+  Hello spring world ( ${hello_spring} )
   </body>
 </html>

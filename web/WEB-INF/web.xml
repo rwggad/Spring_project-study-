@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- 스프링 설정파일 등록 -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/applicationContext.xml</param-value>
+    </context-param>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <!--
+     DispatcherServlet 설정
+     모든 클라이언트의 요청은 dispatcher servlet 부터 받는다.
+     servlet 생성될 때 스프링 설정파일도 같이 생성
+    -->
+    <servlet>
+        <servlet-name>dispatcher</servlet-name>  <!-- 서블릿 명칭 -->
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> <!-- 가져오기 -->
+        <!--
+         초기 스프링 설정파일 (스프링 컨테이너 지정)
+         HandlerMapping, HandlerAdapter.. 등등은 자동으로 생성된다 ㅎ
+
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>/WEB-INF/applicationContext.xml</param-value>
+        </init-param>
+        -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <!--
+     DispatcherServlet 매핑
+     모든 요청에서 처음 만나는 부분은 DispatcherServlet 이기 떄문에 Root로 설정
+    -->
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name> <!-- 서블릿 명칭 -->
+        <url-pattern>/</url-pattern> <!-- *.form -> / 바꾸기-->
+    </servlet-mapping>
+</web-app>

@@ -7,7 +7,7 @@
     <!-- 스프링 설정파일 등록 -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/applicationContext.xml</param-value>
+        <param-value>/WEB-INF/spring/applicationContext.xml</param-value>
     </context-param>
 
     <listener>
@@ -21,15 +21,13 @@
     <servlet>
         <servlet-name>dispatcher</servlet-name>  <!-- 서블릿 명칭 -->
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> <!-- 가져오기 -->
-        <!--
-         초기 스프링 설정파일 (스프링 컨테이너 지정)
+        <!-- 초기 스프링 설정파일 (스프링 컨테이너 지정)
          HandlerMapping, HandlerAdapter.. 등등은 자동으로 생성된다 ㅎ
-
+        -->
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>/WEB-INF/applicationContext.xml</param-value>
+            <param-value>/WEB-INF/spring/appServlet/dispatcher-servlet.xml</param-value>
         </init-param>
-        -->
         <load-on-startup>1</load-on-startup>
     </servlet>
     <!--

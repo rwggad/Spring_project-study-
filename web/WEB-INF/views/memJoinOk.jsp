@@ -13,21 +13,21 @@
 <body>
 	<h1> memJoinOk </h1>
 	
-	ID : ${member.memId} <br />
-	PW : ${member.memPw} <br />
-	Mail : ${member.memMail} <br />
-	PHONE1 : ${member.memPhones[0].memPhone1} - ${member.memPhones[0].memPhone2} - ${member.memPhones[0].memPhone3} <br />
-	PHONE2 : ${member.memPhones[1].memPhone1} - ${member.memPhones[1].memPhone2} - ${member.memPhones[1].memPhone3} <br />
-	AGE : ${member.memAge} <br />
-	ADULT : ${member.memAdult} <br />
-	GENDER : ${member.memGender} <br />
+	ID : ${mem.memId} <br />
+	PW : ${mem.memPw} <br />
+	Mail : ${mem.memMail} <br />
+	PHONE1 : ${mem.memPhones[0].memPhone1} - ${mem.memPhones[0].memPhone2} - ${mem.memPhones[0].memPhone3} <br />
+	PHONE2 : ${mem.memPhones[1].memPhone1} - ${mem.memPhones[1].memPhone2} - ${mem.memPhones[1].memPhone3} <br />
+	AGE : ${mem.memAge} <br />
+	ADULT : ${mem.memAdult} <br />
+	GENDER : ${mem.memGender} <br />
 	FAVORITE SPORT : 
-	<c:forEach var="fSport" items="${member.memFSports}">
+	<c:forEach var="fSport" items="${mem.memFSports}">
 		${fSport}, 
 	</c:forEach> <br />
 	
 	<P>  The time on the server is ${serverTime}. </P>
 	
-	<a href="/lec19/resources/html/memJoin.html"> Go MemberJoin </a>
+	<a href="/resources/html/index.html"> Go MemberJoin </a>
 </body>
 </html>

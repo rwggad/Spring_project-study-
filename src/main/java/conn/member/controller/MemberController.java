@@ -62,22 +62,23 @@ public class MemberController {
     /** 회원 등록 */
     @RequestMapping(value = "/memJoin", method = RequestMethod.POST) // Post 방식으로 정보가 전달되었나?
     public String memJoin(@ModelAttribute("mem") Member member){
-        service.memberRegister(member); // 회원 등록
-        return "memJoinOk"; // jsp 이동
+        if(service.memberRegister(member)) { // 회원등록 완료
+            return "memJoinOk";
+        }else{
+            return "memJoinFail";
+        }
     }
 
     /** 회원 로그인 */
     @RequestMapping(value = "/memLogin", method = RequestMethod.POST)
-    public String login(Model model, @RequestParam("memId") String memId, @RequestParam("memPw") String password){
-        Member member = service.memberSearch(memId, password);
-        try{
-            model.addAttribute("memId", member.getMemId());
-            model.addAttribute("memPw", member.getMemPw());
-        }catch (Exception e){
-            System.out.println(e.toString());
+    public String memLogin(@ModelAttribute("mem") Member member){
+        // 로그인 정보 전달 후 회원 정보가 있다면 isMember에 회원정보 저장 없다면 null
+        Member isMember = service.memberLogin(member.getMemId(), member.getMemPw());
+        if(isMember != null){ //
+            return "memLoginOk";
+        }else{
+            return "memLoginFail";
         }
-        return "memLoginOk";
-
     }
 
     @RequestMapping(value ="/memModify", method = RequestMethod.POST)
@@ -86,7 +87,11 @@ public class MemberController {
     }
 
     @RequestMapping(value ="/memRemove", method = RequestMethod.POST)
-    public String remove(){
-        return "memRemoveOk";
+    public String remove(@ModelAttribute("mem") Member member){
+        if(service.memberRemove(member.getMemId())){ // 삭제 하려는 회원 정보가 있다면 삭제완료
+            return "memRemoveOk";
+        }else{
+            return "memRemoveFail";
+        }
     }
 }

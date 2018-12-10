@@ -11,12 +11,10 @@
 	<title>Home</title>
 </head>
 <body>
-	<h1> memRemoveOk </h1>
-	
-	ID : ${mem.memId}<br />
-	
+	<h1> memLoginFail </h1>
+
 	<P>  The time on the server is ${serverTime}. </P>
 	
-	<a href="/resources/html/index.html"> Go Main </a>
+	<a href="/resources/html/login.html"> Back Login Page </a>
 </body>
 </html>

@@ -12,8 +12,11 @@
 </head>
 <body>
 	<h1> memLoginOk </h1>
-	ID : ${memId}<br />
-	PW : ${memPw}<br />
+	
+	ID : ${mem.memId}<br />
+	PW : ${mem.memPw}<br />
+	
+	<P>  The time on the server is ${serverTime}. </P>
 	
 	<a href="/resources/html/index.html"> Go Main </a>
 </body>

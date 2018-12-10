@@ -1,12 +1,9 @@
 package conn.member.dao;
 
 import conn.member.Member;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Set;
 
 /**
  * xml파일에 명시하지 않고 스프링 컨테이너로 Bean 생성방법 */
@@ -30,7 +27,7 @@ public class MemberDao implements IMemberDao{
 
     /**
      * db 대체인 map 에 회원 정보 선택*/
-    public Member memberSelect(String memId, String memPw) {
+    public Member memberSelect(String memId) {
         if(!this.dbMap.containsKey(memId)) { // 회원 정보가 없다면
             return null;
         }else{ // 회원 정보가 있다면
@@ -43,6 +40,6 @@ public class MemberDao implements IMemberDao{
     }
 
     public void memberDelete(String memId) {
-
+        this.dbMap.remove(memId); // 회원 정보 삭제
     }
 }

@@ -13,11 +13,11 @@
 <body>
 	<h1> memLoginOk </h1>
 	
-	ID : ${member.memId}<br />
-	PW : ${member.memPw}<br />
+	ID : ${mem.memId}<br />
+	PW : ${mem.memPw}<br />
 	
 	<P>  The time on the server is ${serverTime}. </P>
 	
-	<a href="/lec19/resources/html/index.html"> Go Main </a>
+	<a href="/resources/html/index.html"> Go Main </a>
 </body>
 </html>

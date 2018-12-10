@@ -6,22 +6,29 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
 
 @Controller
+@RequestMapping("/member") // 맵핑할때 공통된 부분 삽입
 public class MemberController {
 
     @Autowired
     MemberService service;
 
-    @RequestMapping(value = "/memJoin")
+    /**
+     * method 정보가 Post 방식으로 전달되었는가 ? 확인하는 것*/
+    @RequestMapping(value = "/memJoin", method = RequestMethod.POST)
     public String memJoin(Model model, HttpServletRequest request){
         /**
-         * 회원 등록*/
-
+         * 회원 등록
+         *
+         * HttpServletRequest requset를 이용해서 html 파라미터를 가져오는 방법 (가장 기본)
+         * */
         /**
          * memJoin.html 에서 넘어온 파라미터 (request) 를 String 형태로 저장한다. */
         String memId = request.getParameter("memId");
@@ -44,18 +51,26 @@ public class MemberController {
         return "memJoinOk";
     }
 
-    @RequestMapping(value = "/memLogin")
-    public String login(Model model, HttpServletRequest request){
+    @RequestMapping(value = "/memLogin", method = RequestMethod.POST)
+    public String login(Model model, @RequestParam("memId") String memId,
+                        @RequestParam(value = "memPw", required = true, defaultValue = "") String password){
         /**
          * 회원 로그인*/
 
         /**
-         * login.html 에서 넘어온 파라미터 (request) 를 String 형태로 저장한다. */
-        String memId = request.getParameter("memId");
-        String password = request.getParameter("memPw");
+         * login.html 에서 넘어온 파라미터 (request) 를 String 형태로 저장한다.
+         *
+         * annotation 을 이용해서 html 파라미터를 가져오는 방법
+         * (required 속성 값이 true 이면 값이 없을 때 예외 처리를 발생 시킨다.)
+         * 만약 defaultValue값을 설정하면 사용자가 값을 입력안하면 defaultValue 로 대체한다.
+         * */
 
+        /**
+         * Mapdb에 저장된 회원 정보 가져오기 */
         Member member = service.memberSearch(memId, password);
 
+        /**
+         * try로 안전하게~*/
         try{
             model.addAttribute("memId", member.getMemId());
             model.addAttribute("memPw", member.getMemPw());
@@ -63,6 +78,8 @@ public class MemberController {
             System.out.println(e.toString());
         }
 
+        /**
+         * memLoginOk.jsp 로 이동*/
         return "memLoginOk";
     }
 }

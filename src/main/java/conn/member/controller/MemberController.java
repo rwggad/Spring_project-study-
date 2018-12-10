@@ -5,12 +5,10 @@ import conn.member.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 
 
 @Controller
@@ -45,12 +43,15 @@ public class MemberController {
         return "memJoinOk";
     }*/
     /**
-     * Member 객체 이용
+     * Member 커맨드 객체 이용
      * Paramater 에서 자동으로 Member 인스턴스에 등록된다.
      * 클래스에 getter setter가 무조건 있어야한다.
      * get 으로 사용하면된다.
+     *
+     * @ModelAttribute 는 커맨드 객체 를 참조하는 jsp에서 이름 변경(member -> mem)
+     * @ModelAttribute 사용하지 않으면 커맨드 객체의 이름을 그대로 사용하면 된다.
      * */
-    public String memJoin(Member member){
+    public String memJoin(@ModelAttribute("mem") Member member){
         service.memberRegister(member.getMemId(), member.getMemPw(), member.getMemMail(),
                 member.getMemPhone1(), member.getMemPhone2(), member.getMemPhone3());
         return "memJoinOk";

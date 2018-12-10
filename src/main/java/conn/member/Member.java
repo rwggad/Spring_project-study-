@@ -1,12 +1,18 @@
 package conn.member;
 
+import java.util.List;
+
+/**
+ * 사용자 정보를 저장하는 class*/
 public class Member {
-    private String memId;
-    private String memPw;
-    private String memMail;
-    private String memPhone1;
-    private String MemPhone2;
-    private String MemPhone3;
+    private String memId; // 사용자 아이디
+    private String memPw; // 사용자 패스워드
+    private String memMail; // 사용자 이메일
+    private List<MemPhone> memPhones; // 사용자 폰번호들..
+    private int memAge; // 사용자 나이
+    private boolean memAdult; // 사용자가 어른인가?
+    private String memGender; // 사용자 성별
+    private String[] memFSports; // 사용자가 좋아하는 스포츠
 
     public String getMemId() {
         return memId;
@@ -32,27 +38,43 @@ public class Member {
         this.memMail = memMail;
     }
 
-    public String getMemPhone1() {
-        return memPhone1;
+    public List<MemPhone> getMemPhones() {
+        return memPhones;
     }
 
-    public void setMemPhone1(String memPhone1) {
-        this.memPhone1 = memPhone1;
+    public void setMemPhones(List<MemPhone> memPhones) {
+        this.memPhones = memPhones;
     }
 
-    public String getMemPhone2() {
-        return MemPhone2;
+    public int getMemAge() {
+        return memAge;
     }
 
-    public void setMemPhone2(String memPhone2) {
-        MemPhone2 = memPhone2;
+    public void setMemAge(int memAge) {
+        this.memAge = memAge;
     }
 
-    public String getMemPhone3() {
-        return MemPhone3;
+    public boolean isMemAdult() {
+        return memAdult;
     }
 
-    public void setMemPhone3(String memPhone3) {
-        MemPhone3 = memPhone3;
+    public void setMemAdult(boolean memAdult) {
+        this.memAdult = memAdult;
+    }
+
+    public String getMemGender() {
+        return memGender;
+    }
+
+    public void setMemGender(String memGender) {
+        this.memGender = memGender;
+    }
+
+    public String[] getMemFSports() {
+        return memFSports;
+    }
+
+    public void setMemFSports(String[] memFSports) {
+        this.memFSports = memFSports;
     }
 }

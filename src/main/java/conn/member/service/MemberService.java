@@ -18,29 +18,30 @@ public class MemberService implements IMemberService{
     @Autowired
     MemberDao dao;
 
-    public void memberRegister(String memId, String memPw, String memMail, String memPhone1, String memPhone2, String memPhone3) {
+    /** 회원 등록 Service*/
+    public void memberRegister(Member member) {
         System.out.println("memberRegister()");
-        System.out.println("memId : " + memId);
-        System.out.println("memPw : " + memPw);
-        System.out.println("memMail : " + memMail);
-        System.out.println("memPhone : " + memPhone1 + " - " + memPhone2 + " - " + memPhone3);
-
-        dao.memberInsert(memId, memPw, memMail, memPhone1, memPhone2, memPhone3);
+        dao.memberInsert(member); // dao 에 회원 정보 전달
     }
 
+    /** 회원 검색 Service*/
     public Member memberSearch(String memId, String memPw) {
         System.out.println("memberSearch()");
-        System.out.println("memId : " + memId);
-        System.out.println("memPw : " + memPw);
-
-        return dao.memberSelect(memId, memPw);
+        Member member = dao.memberSelect(memId, memPw);
+        if(member != null){
+            return member;
+        } else{
+            return null;
+        }
     }
 
+    /** 회원 정보 변경 Service*/
     public void memberModify() {
-
+        System.out.println("memberModify()");
     }
 
+    /** 회원 정보 삭제 Service*/
     public void memberRemove() {
-
+        System.out.println("memberRemove()");
     }
 }

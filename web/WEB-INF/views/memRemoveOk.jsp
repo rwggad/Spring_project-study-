@@ -11,10 +11,9 @@
 	<title>Home</title>
 </head>
 <body>
-	<h1> memLoginOk </h1>
+	<h1> memRemoveOk </h1>
 	
-	ID : ${member.memId}<br />
-	PW : ${member.memPw}<br />
+	ID : ${mem.memId}<br />
 	
 	<P>  The time on the server is ${serverTime}. </P>
 	

@@ -12,9 +12,12 @@
 </head>
 <body>
 <h1>
-	Hello world!  
+	Hello SpringFramework world!
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
+<button onclick="location.href = '/resources/html/index.html'">
+	접속하기
+</button>
 </body>
 </html>

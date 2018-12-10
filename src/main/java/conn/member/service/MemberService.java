@@ -19,7 +19,7 @@ public class MemberService implements IMemberService{
     /** 회원 등록 Service*/
     public Boolean memberRegister(Member member) {
         System.out.println("memberRegister()");
-        Member isNewMember = dao.memberSelect(member.getMemId());
+        Member isNewMember = dao.memberSelect(member);
         if(isNewMember == null) { // dbMap 에 저장된 회원 정보가 없다는 뜻. (신규 회원)
             dao.memberInsert(member);
             return true;
@@ -29,12 +29,12 @@ public class MemberService implements IMemberService{
     }
 
     /** 회원 로그인 Service*/
-    public Member memberLogin(String memId, String mamPw) {
+    public Member memberLogin(Member member) {
         System.out.println("memberSearch()");
-        Member member = dao.memberSelect(memId);
-        if(member != null){ // 회원정보가 있고
-            if(member.getMemPw().equals(mamPw)){ // 비밀번호가 맞다면..
-                return member;
+        Member ckMember = dao.memberSelect(member);
+        if(ckMember != null){ // 회원정보가 있고
+            if(ckMember.getMemPw().equals(member.getMemPw())){ // 비밀번호가 맞다면..
+                return ckMember;
             }else{
                 return null;
             }
@@ -44,16 +44,21 @@ public class MemberService implements IMemberService{
     }
 
     /** 회원 정보 변경 Service*/
-    public void memberModify(Member member) {
+    public Member[] memberModify(Member member) {
         System.out.println("memberModify()");
+
+        Member memBef = dao.memberSelect(member);
+        Member memAft = dao.memberUpdate(member);
+
+        return new Member[]{memBef, memAft};
     }
 
     /** 회원 정보 삭제 Service*/
-    public Boolean memberRemove(String memId) {
+    public Boolean memberRemove(Member member) {
         System.out.println("memberRemove()");
-        Member member = dao.memberSelect(memId);
-        if(member != null){ // 삭제 하려는 회원 정보가 존재 할 때
-            dao.memberDelete(memId);
+        Member ckMember = dao.memberSelect(member);
+        if(ckMember != null){ // 삭제 하려는 회원 정보가 존재 할 때
+            dao.memberDelete(member);
             return true;
         }else{ // 존재 하지 않는 회원
             return false;

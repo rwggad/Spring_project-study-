@@ -15,6 +15,6 @@
 
 	<P>  The time on the server is ${serverTime}. </P>
 	
-	<a href="/resources/html/remove.html.html"> Back Remove Page </a>
+	<a href="/resources/html/remove.html"> Back Remove Page </a>
 </body>
 </html>

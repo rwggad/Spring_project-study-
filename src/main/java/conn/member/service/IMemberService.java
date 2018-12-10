@@ -4,7 +4,7 @@ import conn.member.Member;
 
 public interface IMemberService {
     Boolean memberRegister(Member member);
-    Member memberLogin(String memId, String memPw);
-    void memberModify(Member member);
-    Boolean memberRemove(String memId);
+    Member memberLogin(Member member);
+    Member[] memberModify(Member member);
+    Boolean memberRemove(Member member);
 }

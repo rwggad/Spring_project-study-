@@ -22,11 +22,11 @@
 	AGE : ${memBef.memAge} <br />
 	ADULT : ${memBef.memAdult} <br />
 	GENDER : ${memBef.memGender} <br />
-	FAVORITE SPORT : 
+	FAVORITE SPORT :
 	<c:forEach var="fSport" items="${memBef.memFSports}">
-		${fSport}, 
+		${fSport},
 	</c:forEach> <br />
-	
+
 	<h3> memAft </h3>
 	ID : ${memAft.memId} <br />
 	PW : ${memAft.memPw} <br />
@@ -36,13 +36,13 @@
 	AGE : ${memAft.memAge} <br />
 	ADULT : ${memAft.memAdult} <br />
 	GENDER : ${memAft.memGender} <br />
-	FAVORITE SPORT : 
+	FAVORITE SPORT :
 	<c:forEach var="fSport" items="${memAft.memFSports}">
-		${fSport}, 
+		${fSport},
 	</c:forEach> <br />
-	
+
 	<P>  The time on the server is ${serverTime}. </P>
-	
+
 	<a href="/resources/html/index.html"> Go Main </a>
 </body>
 </html>

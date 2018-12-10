@@ -4,9 +4,15 @@ import conn.member.Member;
 import conn.member.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.portlet.ModelAndView;
+
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 
 @Controller
@@ -15,6 +21,20 @@ public class MemberController {
 
     @Autowired
     MemberService service;
+
+    /**
+     * 컨트롤러가 호출되고, 안의 메서드가 호출될때 서버의 시간을 나타내는 기능을 해준다.
+     *
+     * @ModelAttribute annotation 을 준 메서드는 어떠한 메서드가 호출될 때 같이 호출이 된다.
+     *
+     * serverTime로 view에서 바로 사용이 가능*/
+    @ModelAttribute("serverTime")
+    public String getServerTime(Locale locale) {
+        Date date = new Date();
+        DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+
+        return dateFormat.format(date);
+    }
     /**
      *  html 파일에서 파라미터를 가져오는 방법은 크게 3가지가 있다.
      *
@@ -71,7 +91,7 @@ public class MemberController {
     @RequestMapping(value = "/memLogin", method = RequestMethod.POST)
     public String memLogin(@ModelAttribute("mem") Member member){
         // 로그인 정보 전달 후 회원 정보가 있다면 isMember에 회원정보 저장 없다면 null
-        Member isMember = service.memberLogin(member.getMemId(), member.getMemPw());
+        Member isMember = service.memberLogin(member);
         if(isMember != null){ //
             return "memLoginOk";
         }else{
@@ -79,14 +99,22 @@ public class MemberController {
         }
     }
 
+    /**
+     * Model 객체는 뷰에 데이터만 전달하는 객체
+     * ModelAndView 객체는 데이터와 뷰의 이름을 함께 전달하는 객체이다. */
+    /** 회원 수정 */
     @RequestMapping(value ="/memModify", method = RequestMethod.POST)
-    public String modify(){
+    public String memModify(Model model, Member member){
+        Member[] members = service.memberModify(member);
+        model.addAttribute("newBef", members[0]);
+        model.addAttribute("newAft", members[1]);
         return "memModifyOk";
     }
 
+    /** 회원 삭제 */
     @RequestMapping(value ="/memRemove", method = RequestMethod.POST)
-    public String remove(@ModelAttribute("mem") Member member){
-        if(service.memberRemove(member.getMemId())){ // 삭제 하려는 회원 정보가 있다면 삭제완료
+    public String memRemove(@ModelAttribute("mem") Member member){
+        if(service.memberRemove(member)){ // 삭제 하려는 회원 정보가 있다면 삭제완료
             return "memRemoveOk";
         }else{
             return "memRemoveFail";

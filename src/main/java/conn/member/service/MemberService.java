@@ -3,9 +3,7 @@ package conn.member.service;
 import conn.member.Member;
 import conn.member.dao.MemberDao;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 
 /**

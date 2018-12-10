@@ -39,6 +39,8 @@ public class MemberDao implements IMemberDao{
 
     }
 
+    /**
+     * 회원 정보 삭제*/
     public void memberDelete(String memId) {
         this.dbMap.remove(memId); // 회원 정보 삭제
     }

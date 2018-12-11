@@ -4,11 +4,11 @@ import loginSystem.Member;
 import loginSystem.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.text.DateFormat;
 import java.util.Date;
@@ -28,6 +28,12 @@ public class MemberController {
      * @ModelAttribute annotation 을 준 메서드는 어떠한 메서드가 호출될 때 같이 호출이 된다.
      *
      * serverTime로 view에서 바로 사용이 가능*/
+
+    @ModelAttribute("cp")
+    public String getContextPath(HttpServletRequest request) {
+        return request.getContextPath();
+    }
+
     @ModelAttribute("serverTime")
     public String getServerTime(Locale locale) {
         Date date = new Date();
@@ -78,17 +84,7 @@ public class MemberController {
      * */
 
 
-    /** 회원 등록 */
-    @RequestMapping(value = "/memJoin", method = RequestMethod.POST) // Post 방식으로 정보가 전달되었나?
-    public String memJoin(@ModelAttribute("mem") Member member){
-        if(service.memberRegister(member)) { // 회원등록 완료
-            return "memJoinOk";
-        }else{
-            return "member/memJoinFail";
-        }
-    }
-
-    /** 회원 로그인
+    /** 세션 등록
      *
      * Session을 받는 방법은 크게 두가지가 있다.
      *
@@ -100,37 +96,78 @@ public class MemberController {
      *   HttpServletRequest request 로 파라미터로 정의하고
      *   사용할 코드 에 HttpSession session = request.getSession(); 을 하고 사용하면된다.
      * */
-    @RequestMapping(value = "/memLogin", method = RequestMethod.POST)
-    public String memLogin(@ModelAttribute("mem") Member member, HttpSession session){
-        // 로그인 정보 전달 후 회원 정보가 있다면 isMember에 회원정보 저장 없다면 null
-        Member isMember = service.memberLogin(member);
-        if(isMember != null){ // 회원일 경우
-            session.setAttribute("member", isMember); // 세션 생성
-            return "memLoginOk";
-        }else{
-            return "member/memLoginFail";
-        }
-    }
 
     /**
      * Model 객체는 뷰에 데이터만 전달하는 객체
      * ModelAndView 객체는 데이터와 뷰의 이름을 함께 전달하는 객체이다. */
+
+
+
+    /** 회원 등록 jsp 로 이동*/
+    @RequestMapping(value = "/joinForm")
+    public String joinForm(Member member){
+        return "/member/joinForm";
+    }
+
+    /** 회원 로그인 jsp 로 이동*/
+    @RequestMapping(value = "/loginForm")
+    public String loginForm(Member member){
+        return "/member/loginForm";
+    }
+
+    /** 회원 로그아웃 jsp 로 이동*/
+    @RequestMapping(value = "/logout")
+    public String logoutOk(Member member, HttpSession session){
+        session.invalidate(); // 세션 삭제
+        return "/member/logoutOk";
+    }
+
+    /** 회원 정보 변경 jsp 로 이동*/
+    @RequestMapping(value = "/modifyForm")
+    public String modifyForm(Member member){
+        return "/member/modifyForm";
+    }
+
+    /** 회원 삭제 jsp 로 이동*/
+    @RequestMapping(value = "/removeForm")
+    public String removeForm(Member member){
+        return "/member/removeForm";
+    }
+
+    //-------------------------------------------------------------
+
+    /** 회원 등록 */
+    @RequestMapping(value = "/join", method = RequestMethod.POST)
+    public String join(Member member, HttpSession session){
+        if(service.memberRegister(member)){ // 최초 회원이라면
+            session.setAttribute("member", member); // 세션등록
+            return "/member/joinOk";
+        }else{ // 이미 등록된 회원이라면
+            return "/member/joinFail";
+        }
+    }
+
+    /** 회원 로그인 */
+    @RequestMapping(value ="/login", method = RequestMethod.POST)
+    public String login(Member member, HttpSession session){
+        if(service.memberLogin(member) != null){ // 로그인 성공 일때
+            session.setAttribute("member", member); // 세션 등록
+            return "/member/LoginOk";
+        }else{
+            return "member/LoginFail";
+        }
+    }
+
     /** 회원 수정 */
-    @RequestMapping(value ="/memModify", method = RequestMethod.POST)
-    public String memModify(Model model, Member member){
-        Member[] members = service.memberModify(member);
-        model.addAttribute("newBef", members[0]);
-        model.addAttribute("newAft", members[1]);
-        return "memModifyOk";
+    @RequestMapping(value ="/modify", method = RequestMethod.POST)
+    public String modify(Member member){
+        return "/member/modifyOk";
     }
 
     /** 회원 삭제 */
-    @RequestMapping(value ="/memRemove", method = RequestMethod.POST)
-    public String memRemove(@ModelAttribute("mem") Member member){
-        if(service.memberRemove(member)){ // 삭제 하려는 회원 정보가 있다면 삭제완료
-            return "memRemoveOk";
-        }else{
-            return "member/memRemoveFail";
-        }
+    @RequestMapping(value ="/remove", method = RequestMethod.POST)
+    public String remove(Member member, HttpSession session){
+        session.invalidate();
+        return "/member/removeOk";
     }
 }

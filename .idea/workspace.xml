@@ -7,72 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbb2859b-a793-4b90-9233-481ff86af636" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/loginSystem/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/joinForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/joinOk.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/loginForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/loginOk.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/logoutOk.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/modifyForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/modifyOk.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/removeForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/removeOk.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/joinFail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/loginFail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Spring_projects_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Spring_projects_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/member/MemPhone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/member/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/member/controller/MemberController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/member/dao/IMemberDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/member/dao/MemberDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/member/service/IMemberService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/member/service/MemberService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/spring/appServlet/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/spring/appServlet/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/memJoinFail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/memJoinOk.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/memLoginFail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/memLoginOk.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/memModifyOk.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/memRemoveFail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/memRemoveOk.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/resources/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/resources/html/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/resources/html/memJoin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/resources/html/memmodify.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/resources/html/remove.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/loginSystem/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/loginSystem/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/loginSystem/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/loginSystem/controller/MemberController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/loginSystem/dao/MemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/loginSystem/dao/MemberDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/member/loginForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/member/loginForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/member/modifyForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/member/modifyForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/member/removeForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/member/removeForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/member/MemPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loginSystem/MemPhone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/member/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loginSystem/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/member/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loginSystem/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/member/dao/IMemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loginSystem/dao/IMemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/member/dao/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loginSystem/dao/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/member/service/IMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loginSystem/service/IMemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loginSystem/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/member/MemPhone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/member/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/member/controller/MemberController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/member/dao/IMemberDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/member/dao/MemberDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/member/service/IMemberService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/member/service/MemberService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/memJoinFail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/memJoinOk.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/memLoginFail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/memLoginOk.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/memModifyOk.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/memRemoveFail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/memRemoveOk.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/html/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/html/memJoin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/html/memmodify.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/resources/html/remove.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/loginSystem/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loginSystem/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/loginSystem/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loginSystem/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/loginSystem/dao/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loginSystem/dao/MemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/loginSystem/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/loginSystem/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/loginSystem/controller/MemberController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/loginSystem/dao/MemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/loginSystem/dao/MemberDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/member/loginForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/loginForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/member/modifyForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/modifyForm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/member/removeForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/member/removeForm.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,14 +41,15 @@
     <session id="1546652744">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -101,10 +57,10 @@
           <entry key="class" value="1" />
           <entry key="css" value="1" />
           <entry key="html" value="48" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="78" />
-          <entry key="jsp" value="79" />
-          <entry key="xml" value="19" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="87" />
+          <entry key="jsp" value="91" />
+          <entry key="xml" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -112,26 +68,26 @@
           <entry key="CLASS" value="1" />
           <entry key="CSS" value="1" />
           <entry key="HTML" value="48" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="78" />
-          <entry key="JSP" value="79" />
-          <entry key="XML" value="19" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="87" />
+          <entry key="JSP" value="91" />
+          <entry key="XML" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="52" />
-          <entry key="java" value="8120" />
-          <entry key="jsp" value="553" />
-          <entry key="xml" value="1554" />
+          <entry key="java" value="9054" />
+          <entry key="jsp" value="647" />
+          <entry key="xml" value="1596" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="52" />
-          <entry key="JAVA" value="8120" />
-          <entry key="JSP" value="553" />
-          <entry key="XML" value="1554" />
+          <entry key="JAVA" value="9054" />
+          <entry key="JSP" value="647" />
+          <entry key="XML" value="1596" />
         </counts>
       </usages-collector>
     </session>
@@ -141,29 +97,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/controller/MemberController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+            <state relative-caret-position="578">
+              <caret line="157" column="37" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
+                <element signature="e#2775#2776#0" expanded="true" />
+                <element signature="e#2799#2800#0" expanded="true" />
+                <element signature="e#3335#3336#0" expanded="true" />
+                <element signature="e#3377#3378#0" expanded="true" />
+                <element signature="e#3648#3649#0" expanded="true" />
+                <element signature="e#3690#3691#0" expanded="true" />
+                <element signature="e#3798#3799#0" expanded="true" />
+                <element signature="e#3840#3841#0" expanded="true" />
+                <element signature="e#4592#4593#0" expanded="true" />
+                <element signature="e#4632#4633#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/loginFail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+            <state relative-caret-position="342">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/joinFail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="471">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -171,65 +139,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/joinForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="21" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-              <folding>
-                <element signature="e#391#397#0#HTML" expanded="true" />
-                <element signature="e#397#403#0#HTML" expanded="true" />
-                <element signature="e#450#456#0#HTML" expanded="true" />
-                <element signature="e#456#462#0#HTML" expanded="true" />
-                <element signature="e#554#560#0#HTML" expanded="true" />
-                <element signature="e#560#566#0#HTML" expanded="true" />
-                <element signature="e#611#617#0#HTML" expanded="true" />
-                <element signature="e#617#623#0#HTML" expanded="true" />
-                <element signature="e#671#677#0#HTML" expanded="true" />
-                <element signature="e#677#683#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/joinOk.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/service/MemberService.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+              <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/removeForm.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="42" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/controller/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -238,10 +167,47 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/service/MemberService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/dao/IMemberDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/Member.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="266">
+              <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/dao/MemberDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="30" column="55" lean-forward="true" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#560#561#0" expanded="true" />
+                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -275,7 +241,6 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/views/homes.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/conn/member/member.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/web/resources/html/remove.html" />
         <option value="$PROJECT_DIR$/web/resources/html/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/conn/member/MemPhone.java" />
@@ -298,19 +263,23 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/views/home.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/memModifyFail.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/member/joinOk.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/member/loginForm.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/member/loginOk.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/member/logoutOk.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/member/modifyForm.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/member/modifyOk.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/member/removeForm.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/member/removeOk.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/conn/member/controller/MemberController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/loginSystem/controller/MemberController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/loginSystem/controller/HomeController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/member/joinForm.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/member/joinForm.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/loginSystem/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/member/loginForm.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/member/modifyForm.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/member/removeForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/loginSystem/dao/MemberDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/loginSystem/controller/MemberController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/member/loginFail.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/member/joinFail.jsp" />
       </list>
     </option>
   </component>
@@ -346,8 +315,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="198" />
-    <option name="y" value="114" />
+    <option name="x" value="718" />
+    <option name="y" value="147" />
     <option name="width" value="2088" />
     <option name="height" value="1392" />
   </component>
@@ -388,6 +357,41 @@
               <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="loginSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="loginSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="loginSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="loginSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -407,14 +411,6 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="appServlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
@@ -441,31 +437,32 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544517684234" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544522280129" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\web\resources" />
-      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\src\main\resources" />
-      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\web\WEB-INF" />
-      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\web\WEB-INF\views" />
-      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\web\WEB-INF\views\member" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\web\WEB-INF\views\member" />
+      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\web\WEB-INF\views" />
+      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\web\resources\html" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="conn.member.dao" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\lib" />
+      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\web\resources" />
+      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\src\main\resources" />
+      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\web\WEB-INF" />
       <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\web\WEB-INF\views" />
-      <recent name="C:\Users\rwgga\IdeaProjects\Study\Spring_projects\web\resources\html" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -568,18 +565,19 @@
       <workItem from="1544412830162" duration="17946000" />
       <workItem from="1544434836741" duration="41000" />
       <workItem from="1544512149033" duration="65000" />
-      <workItem from="1544512531448" duration="5077000" />
+      <workItem from="1544512531448" duration="5173000" />
+      <workItem from="1544517834563" duration="4342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30099000" />
+    <option name="totallyTimeSpent" value="34537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="33" width="1455" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23942652" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24301076" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -589,7 +587,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32833958" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32833958" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3982522" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -623,14 +621,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/loginSystem/dao/MemberDao.java</url>
-          <line>39</line>
-          <properties class="loginSystem.dao.MemberDao" method="memberUpdate">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/loginSystem/service/MemberService.java</url>
           <line>46</line>
           <properties class="loginSystem.service.MemberService" method="memberModify">
@@ -642,9 +632,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Spring_projects.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/스프링 공부/drive-download-20181205T104624Z-001/lec17Pjt001/src/main/java/com/bs/lec17/member/service/MemberService.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -661,20 +648,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/memLoginFail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/memJoinOk.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/memLoginFail.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/memJoinOk.jsp" />
     <entry file="jar://$PROJECT_DIR$/lib/spring-web-4.3.18.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -689,20 +664,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/dao/IMemberDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/memRemoveOk.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/memRemoveOk.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/service/IMemberService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -710,118 +672,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/html/remove.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/html/memmodify.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/memLoginOk.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/dao/MemberDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/memModifyOk.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/memRemoveFail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/memModifyFail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding>
-            <element signature="e#171#177#0" expanded="true" />
-            <element signature="e#177#183#0" expanded="true" />
-            <element signature="e#237#243#0" expanded="true" />
-            <element signature="e#299#305#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/html/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="51" selection-start-line="12" selection-start-column="7" selection-end-line="13" selection-end-column="51" />
-          <folding>
-            <element signature="e#369#375#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/resources/html/memJoin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/memJoinFail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/loginOk.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/modifyForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/resources/html/remove.html" />
+    <entry file="file://$PROJECT_DIR$/web/resources/html/memmodify.html" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/memLoginOk.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/memModifyOk.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/memRemoveFail.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/memModifyFail.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/home.jsp" />
+    <entry file="file://$PROJECT_DIR$/web/resources/html/index.html" />
+    <entry file="file://$PROJECT_DIR$/web/resources/html/login.html" />
+    <entry file="file://$PROJECT_DIR$/web/resources/html/memJoin.html" />
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/memJoinFail.jsp" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/modifyOk.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -829,44 +690,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/removeForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/removeOk.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/conn/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/logoutOk.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/loginForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/conn/HomeController.java" />
     <entry file="file://$PROJECT_DIR$/web/resources/css/normal.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -881,18 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#275#276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/MemPhone.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -900,17 +712,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/Member.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="38">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/controller/MemberController.java">
+    <entry file="file://$USER_HOME$/Desktop/스프링 공부/drive-download-20181205T104624Z-001/lec20Pjt001/src/main/java/com/bs/lec20/member/controller/MemberController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+        <state relative-caret-position="209">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="30" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring_projects.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/스프링 공부/drive-download-20181205T104624Z-001/lec20Pjt001/src/main/java/com/bs/lec20/member/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/joinOk.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/removeOk.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/loginOk.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="32" />
+          <folding>
+            <element signature="e#468#474#0#HTML" expanded="true" />
+            <element signature="e#474#480#0#HTML" expanded="true" />
+            <element signature="e#528#534#0#HTML" expanded="true" />
+            <element signature="e#534#540#0#HTML" expanded="true" />
+            <element signature="e#630#636#0#HTML" expanded="true" />
+            <element signature="e#636#642#0#HTML" expanded="true" />
+            <element signature="e#688#694#0#HTML" expanded="true" />
+            <element signature="e#694#700#0#HTML" expanded="true" />
+            <element signature="e#750#756#0#HTML" expanded="true" />
+            <element signature="e#756#762#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/loginForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="8" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/logoutOk.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/modifyForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/removeForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/dao/IMemberDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/dao/MemberDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="30" column="55" lean-forward="true" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -919,72 +865,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/service/MemberService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="495">
+          <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/joinOk.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/loginSystem/controller/MemberController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        <state relative-caret-position="578">
+          <caret line="157" column="37" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#2775#2776#0" expanded="true" />
+            <element signature="e#2799#2800#0" expanded="true" />
+            <element signature="e#3335#3336#0" expanded="true" />
+            <element signature="e#3377#3378#0" expanded="true" />
+            <element signature="e#3648#3649#0" expanded="true" />
+            <element signature="e#3690#3691#0" expanded="true" />
+            <element signature="e#3798#3799#0" expanded="true" />
+            <element signature="e#3840#3841#0" expanded="true" />
+            <element signature="e#4592#4593#0" expanded="true" />
+            <element signature="e#4632#4633#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/loginFail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/joinForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="21" selection-end-column="27" />
+        <state relative-caret-position="361">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/member/joinFail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding>
-            <element signature="e#391#397#0#HTML" expanded="true" />
-            <element signature="e#397#403#0#HTML" expanded="true" />
-            <element signature="e#450#456#0#HTML" expanded="true" />
-            <element signature="e#456#462#0#HTML" expanded="true" />
-            <element signature="e#554#560#0#HTML" expanded="true" />
-            <element signature="e#560#566#0#HTML" expanded="true" />
-            <element signature="e#611#617#0#HTML" expanded="true" />
-            <element signature="e#617#623#0#HTML" expanded="true" />
-            <element signature="e#671#677#0#HTML" expanded="true" />
-            <element signature="e#677#683#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="471">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1007,7 +935,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring</last-edited>
+          <last-edited>Web (Spring_projects)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

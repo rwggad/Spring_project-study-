@@ -38,13 +38,17 @@ public class MemberDao implements IMemberDao{
     /**
      * 회원 정보 수정*/
     public Member memberUpdate(Member member) {
-        dbMap.put(member.getMemId(), member);
-        return dbMap.get(member.getMemId());
+        if(!this.dbMap.containsKey(member.getMemId())) { // 회원 정보가 없다면
+            return null;
+        }else{ // 회원 정보가 있다면
+            dbMap.put(member.getMemId(), member); // 수정 후
+            return this.dbMap.get(member.getMemId()); // 전달
+        }
     }
 
     /**
      * 회원 정보 삭제*/
     public void memberDelete(Member member) {
-        this.dbMap.remove(member.getMemId()); // 회원 정보 삭제
+        this.dbMap.remove(member.getMemId());
     }
 }

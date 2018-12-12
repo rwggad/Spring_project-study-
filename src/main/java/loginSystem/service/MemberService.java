@@ -19,8 +19,8 @@ public class MemberService implements IMemberService{
     /** 회원 등록 Service*/
     public Boolean memberRegister(Member member) {
         System.out.println("memberRegister()");
-        Member isNewMember = dao.memberSelect(member);
-        if(isNewMember == null) { // dbMap 에 저장된 회원 정보가 없다는 뜻. (신규 회원)
+        Member mem = dao.memberSelect(member);
+        if(mem == null) { // dbMap 에 저장된 회원 정보가 없다는 뜻. (신규 회원)
             dao.memberInsert(member);
             return true;
         }else{ // 이미 등록된 회원
@@ -31,10 +31,10 @@ public class MemberService implements IMemberService{
     /** 회원 로그인 Service*/
     public Member memberLogin(Member member) {
         System.out.println("memberSearch()");
-        Member ckMember = dao.memberSelect(member);
-        if(ckMember != null){ // 회원정보가 있고
-            if(ckMember.getMemPw().equals(member.getMemPw())){ // 비밀번호가 맞다면..
-                return ckMember;
+        Member mem = dao.memberSelect(member);
+        if(mem != null){ // 회원정보가 있고
+            if(mem.getMemPw().equals(member.getMemPw())){ // 비밀번호가 맞다면..
+                return mem;
             }else{
                 return null;
             }
@@ -44,24 +44,19 @@ public class MemberService implements IMemberService{
     }
 
     /** 회원 정보 변경 Service*/
-    public Member[] memberModify(Member member) {
+    public Member memberModify(Member member) {
         System.out.println("memberModify()");
-
-        Member memBef = dao.memberSelect(member);
-        Member memAft = dao.memberUpdate(member);
-
-        return new Member[]{memBef, memAft};
+        return  dao.memberUpdate(member);
     }
 
     /** 회원 정보 삭제 Service*/
-    public Boolean memberRemove(Member member) {
+    public void memberRemove(Member member) {
         System.out.println("memberRemove()");
-        Member ckMember = dao.memberSelect(member);
-        if(ckMember != null){ // 삭제 하려는 회원 정보가 존재 할 때
-            dao.memberDelete(member);
-            return true;
-        }else{ // 존재 하지 않는 회원
-            return false;
-        }
+        dao.memberDelete(member);
+    }
+
+    /** 회원 정보 검색*/
+    public Member memberSearch(Member member){
+        return dao.memberSelect(member);
     }
 }

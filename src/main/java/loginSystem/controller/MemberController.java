@@ -4,9 +4,11 @@ import loginSystem.Member;
 import loginSystem.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.portlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -106,32 +108,36 @@ public class MemberController {
     /** 회원 등록 jsp 로 이동*/
     @RequestMapping(value = "/joinForm")
     public String joinForm(Member member){
-        return "/member/joinForm";
+        return "member/joinForm";
     }
 
     /** 회원 로그인 jsp 로 이동*/
     @RequestMapping(value = "/loginForm")
     public String loginForm(Member member){
-        return "/member/loginForm";
+        return "member/loginForm";
     }
 
     /** 회원 로그아웃 jsp 로 이동*/
     @RequestMapping(value = "/logout")
     public String logoutOk(Member member, HttpSession session){
         session.invalidate(); // 세션 삭제
-        return "/member/logoutOk";
+        return "member/logoutOk";
     }
 
     /** 회원 정보 변경 jsp 로 이동*/
     @RequestMapping(value = "/modifyForm")
-    public String modifyForm(Member member){
-        return "/member/modifyForm";
+    public String modifyForm(Model model, Member member, HttpSession session){
+        Member sessionMember = (Member) session.getAttribute("member"); // 현재 세션정보 가져오기
+        model.addAttribute("sessionMember", sessionMember); // 그 세션 정보를 기본 데이터로 보여주기위해
+        return "member/modifyForm";
     }
 
     /** 회원 삭제 jsp 로 이동*/
     @RequestMapping(value = "/removeForm")
-    public String removeForm(Member member){
-        return "/member/removeForm";
+    public String removeForm(Model model, Member member, HttpSession session){
+        Member sessionMember = (Member) session.getAttribute("member"); // 세션 정보 가져오기
+        model.addAttribute("sessionMember", sessionMember); // 세션 정보 model로 전달
+        return "member/removeForm";
     }
 
     //-------------------------------------------------------------
@@ -141,9 +147,9 @@ public class MemberController {
     public String join(Member member, HttpSession session){
         if(service.memberRegister(member)){ // 최초 회원이라면
             session.setAttribute("member", member); // 세션등록
-            return "/member/joinOk";
+            return "member/joinOk";
         }else{ // 이미 등록된 회원이라면
-            return "/member/joinFail";
+            return "member/joinFail";
         }
     }
 
@@ -152,22 +158,32 @@ public class MemberController {
     public String login(Member member, HttpSession session){
         if(service.memberLogin(member) != null){ // 로그인 성공 일때
             session.setAttribute("member", member); // 세션 등록
-            return "/member/LoginOk";
+            return "member/loginOk";
         }else{
-            return "member/LoginFail";
+            return "member/loginFail";
         }
     }
 
     /** 회원 수정 */
     @RequestMapping(value ="/modify", method = RequestMethod.POST)
-    public String modify(Member member){
-        return "/member/modifyOk";
+    public String modify(Model model, Member member, HttpSession session){
+        Member memAft = service.memberModify(member); // 입력받은 member 값으로 회원 db 정보 수정
+        session.setAttribute("member", memAft); // 수정한 값으로 session 수정
+        model.addAttribute("memAft", memAft);// Model 객체 생성
+
+        return "member/modifyOk";
     }
 
     /** 회원 삭제 */
     @RequestMapping(value ="/remove", method = RequestMethod.POST)
-    public String remove(Member member, HttpSession session){
-        session.invalidate();
-        return "/member/removeOk";
+    public String remove(Model model, Member member, HttpSession session){
+        Member sessionMember = (Member) session.getAttribute("member"); // 세션 가져오기
+        if(sessionMember.getMemPw().equals(member.getMemPw())){ // 입력한 비번과 세션의 사용자 비번이 같을 경우
+            session.invalidate(); // 세션 삭제
+            service.memberRemove(sessionMember);
+            return "member/removeOk";
+        }else{
+            return "member/removeFail";
+        }
     }
 }

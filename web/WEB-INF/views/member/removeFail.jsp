@@ -12,10 +12,11 @@
 	<title>Home</title>
 </head>
 <body>
-	<h1> MEMBER LOGIN FAIL </h1>
+	<h1> MEMBER REMOVE FAIL </h1>
+	<h6> 비밀번호 정보가 틀렸습니다.</h6>
 
 	<P>  The time on the server is ${serverTime}. </P>
 	
-	<a href="${cp}/member/loginForm"> MAIN </a>
+	<a href="${cp}/member/removeForm"> BACK </a>
 </body>
 </html>

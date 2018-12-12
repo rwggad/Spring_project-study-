@@ -1,5 +1,7 @@
 package loginSystem;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
 /**
@@ -8,11 +10,11 @@ public class Member {
     private String memId; // 사용자 아이디
     private String memPw; // 사용자 패스워드
     private String memMail; // 사용자 이메일
-    private List<MemPhone> memPhones; // 사용자 폰번호들..
+    /*private List<MemPhone> memPhones; // 사용자 폰번호들..
     private int memAge; // 사용자 나이
     private boolean memAdult; // 사용자가 어른인가?
     private String memGender; // 사용자 성별
-    private String[] memFSports; // 사용자가 좋아하는 스포츠
+    private String[] memFSports; // 사용자가 좋아하는 스포츠*/
 
     public String getMemId() {
         return memId;
@@ -37,7 +39,7 @@ public class Member {
     public void setMemMail(String memMail) {
         this.memMail = memMail;
     }
-
+/*
     public List<MemPhone> getMemPhones() {
         return memPhones;
     }
@@ -76,5 +78,5 @@ public class Member {
 
     public void setMemFSports(String[] memFSports) {
         this.memFSports = memFSports;
-    }
+    }*/
 }

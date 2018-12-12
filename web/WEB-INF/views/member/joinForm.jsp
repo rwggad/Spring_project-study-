@@ -11,7 +11,7 @@
 <html>
 <head>
 <title>Insert title here</title>
-<link rel="stylesheet" type="text/css" href="${cp}/resources/css/normal.css" />
+	<link rel="stylesheet" type="text/css" href="/resources/css/normal.css" />
 </head>
 <body>
 	<h1>MEMBER JOIN</h1>

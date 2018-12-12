@@ -13,9 +13,10 @@
 </head>
 <body>
 	<h1> MEMBER JOIN FAIL </h1>
+	<h6> 중복되는 아이디 입니다. </h6>
 
 	<P>  The time on the server is ${serverTime}. </P>
 	
-	<a href="${cp}/member/joinForm"> MAIN </a>
+	<a href="${cp}/member/joinForm"> BACK </a>
 </body>
 </html>

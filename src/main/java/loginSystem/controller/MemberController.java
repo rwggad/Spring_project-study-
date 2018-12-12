@@ -104,7 +104,6 @@ public class MemberController {
      * ModelAndView 객체는 데이터와 뷰의 이름을 함께 전달하는 객체이다. */
 
 
-
     /** 회원 등록 jsp 로 이동*/
     @RequestMapping(value = "/joinForm")
     public String joinForm(Member member){

@@ -3,6 +3,7 @@ package conn.dao;
 import conn.Model.WordSet;
 import conn.interfaces.IWordDao;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,9 +11,9 @@ import java.util.HashMap;
 
 /**
  * xml파일에 명시하지 않고 스프링 컨테이너로 Bean 생성방법 */
-//@Service
+//@Repository
 //@Component
-@Repository
+@Service
 public class WordDao implements IWordDao {
 
     /**

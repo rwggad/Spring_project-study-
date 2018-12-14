@@ -15,6 +15,7 @@ import javax.servlet.http.HttpSession;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 @Controller
@@ -39,7 +40,7 @@ public class WordController {
     /** Home Form Location*/
     @RequestMapping("/HomeForm")
     public String Home(Model model){
-        ArrayList<WordSet> list = service.SearchAll();
+        List<WordSet> list = service.SearchAll();
         model.addAttribute("wordList", list);
         return "SearchSystem/HomeForm";
     }

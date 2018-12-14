@@ -86,9 +86,9 @@ public class MemberDao implements IMemberDao {
                 new RowMapper<Member>() { // 데이터 맵핑(가져오기)
             public Member mapRow(ResultSet rs, int rowNum) throws SQLException {
                 Member selectMember = new Member();
-                selectMember.setMemId(rs.getString("memId"));
-                selectMember.setMemPw(rs.getString("memPw"));
-                selectMember.setMemMail(rs.getString("memMail"));
+                selectMember.setMemId(rs.getString(1));
+                selectMember.setMemPw(rs.getString(2));
+                selectMember.setMemMail(rs.getString(3));
                 return selectMember;
             }
         });

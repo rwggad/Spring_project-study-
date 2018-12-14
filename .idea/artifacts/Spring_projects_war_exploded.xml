@@ -22,6 +22,10 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.0.5.release" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.0.5.release" />
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+          <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
+          <element id="library" level="project" name="Maven: com.oracle:ojdbc6:12.1.0.2" />
+          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
+          <element id="library" level="project" name="ojdbc8" />
         </element>
       </element>
     </root>

@@ -121,7 +121,7 @@ public class MemberController {
             session.setAttribute("memberSession",member);
             return "redirect:/";
         }else{ // 회원 등록 실패
-            return "LoginSystem/LoginFail";
+            return "LoginSystem/JoinFail";
         }
     }
 

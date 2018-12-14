@@ -6,51 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbb2859b-a793-4b90-9233-481ff86af636" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Model/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Model/WordSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/WordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/WordController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/MemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/MemberDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/WordDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/WordDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/interfaces/IMemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/interfaces/IMemberDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/interfaces/IMemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/interfaces/IMemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/interfaces/IWordDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/interfaces/IWordDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/interfaces/IWordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/interfaces/IWordService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/service/MemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/service/WordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/service/WordService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/spring/appServlet/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/spring/appServlet/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/Model/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/WordSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/Model/WordSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/controller/WordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/controller/WordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/dao/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/dao/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/dao/WordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/dao/WordDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/interfaces/IMemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/interfaces/IMemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/interfaces/IMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/interfaces/IMemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/interfaces/IWordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/interfaces/IWordDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/interfaces/IWordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/interfaces/IWordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/service/WordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/service/WordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Model/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Model/WordSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/controller/MemberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/controller/MemberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/controller/WordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/controller/WordController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/MemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/dao/MemberDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/WordDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/dao/WordDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/interfaces/IMemberDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/interfaces/IMemberDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/interfaces/IMemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/interfaces/IMemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/interfaces/IWordDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/interfaces/IWordDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/interfaces/IWordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/interfaces/IWordService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/service/MemberService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/service/WordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/service/WordService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fbb2859b-a793-4b90-9233-481ff86af636" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,7 +19,7 @@
     <session id="1546652744">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
@@ -82,7 +38,7 @@
           <entry key="class" value="2" />
           <entry key="css" value="1" />
           <entry key="html" value="48" />
-          <entry key="iml" value="4" />
+          <entry key="iml" value="5" />
           <entry key="java" value="122" />
           <entry key="jsp" value="126" />
           <entry key="xml" value="31" />
@@ -93,7 +49,7 @@
           <entry key="CLASS" value="2" />
           <entry key="CSS" value="1" />
           <entry key="HTML" value="48" />
-          <entry key="IDEA_MODULE" value="4" />
+          <entry key="IDEA_MODULE" value="5" />
           <entry key="JAVA" value="122" />
           <entry key="JSP" value="126" />
           <entry key="XML" value="31" />
@@ -104,7 +60,7 @@
           <entry key="html" value="52" />
           <entry key="java" value="10543" />
           <entry key="jsp" value="1159" />
-          <entry key="xml" value="1628" />
+          <entry key="xml" value="1629" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -112,7 +68,7 @@
           <entry key="HTML" value="52" />
           <entry key="JAVA" value="10543" />
           <entry key="JSP" value="1159" />
-          <entry key="XML" value="1628" />
+          <entry key="XML" value="1629" />
         </counts>
       </usages-collector>
     </session>
@@ -173,20 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <state relative-caret-position="221">
+              <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -194,19 +141,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1180">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            <state relative-caret-position="-493">
+              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Spring_projects.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -316,7 +268,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="702" />
     <option name="y" value="72" />
     <option name="width" value="2184" />
@@ -367,51 +319,6 @@
               <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="conn" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="conn" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="conn" type="462c0819:PsiDirectoryNode" />
-              <item name="Interceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="conn" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="conn" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -453,10 +360,6 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -467,7 +370,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544772528846" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544772710781" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -603,12 +506,12 @@
       <workItem from="1544539626816" duration="2811000" />
       <workItem from="1544591065295" duration="3030000" />
       <workItem from="1544597281079" duration="2619000" />
-      <workItem from="1544770874642" duration="1542000" />
+      <workItem from="1544770874642" duration="1835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50941000" />
+    <option name="totallyTimeSpent" value="51234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="33" width="1455" height="935" extended-state="6" />
@@ -624,7 +527,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32958803" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32958803" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.11860175" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -775,9 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Spring_projects.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/conn/controller/WordController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -799,13 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -851,17 +744,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1180">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Spring_projects.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        <state relative-caret-position="221">
+          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
         </state>
       </provider>
     </entry>

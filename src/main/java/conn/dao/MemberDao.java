@@ -6,6 +6,11 @@ import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 
+
+/**
+ * xml파일에 명시하지 않고 스프링 컨테이너로 Bean 생성방법 */
+//@Service
+//@Component
 @Repository
 public class MemberDao implements IMemberDao {
 

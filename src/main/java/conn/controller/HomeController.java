@@ -11,11 +11,7 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-/**
- * xml파일에 명시하지 않고 스프링 컨테이너로 Bean 생성방법 */
-//@Service
-//@Component
-@Repository
+@Controller
 public class HomeController {
 
     /**

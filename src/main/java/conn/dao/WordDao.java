@@ -1,6 +1,6 @@
 package conn.dao;
 
-import conn.WordSet;
+import conn.Model.WordSet;
 import conn.interfaces.IWordDao;
 import org.springframework.stereotype.Repository;
 

@@ -11,7 +11,6 @@
     <mvc:annotation-driven></mvc:annotation-driven> <!-- Annotation 활성화 -->
     <context:component-scan base-package="conn"></context:component-scan> <!-- Component 패키지 지정 -->
 
-
     <!--
     MVC 작동 방식 2
 
@@ -28,7 +27,7 @@
 
     -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/views/"></property>
+        <property name="prefix" value="/WEB-INF/views"></property>
         <property name="suffix" value=".jsp"></property>
     </bean>
 

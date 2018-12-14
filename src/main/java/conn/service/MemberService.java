@@ -1,6 +1,6 @@
 package conn.service;
 
-import conn.Member;
+import conn.Model.Member;
 import conn.dao.MemberDao;
 import conn.interfaces.IMemberService;
 import org.springframework.beans.factory.annotation.Autowired;

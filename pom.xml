@@ -1,60 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
-         version="4.0">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-    <!-- 스프링 설정파일 등록 -->
-    <context-param>
-        <param-name>contextConfigLocation</param-name>
-        <param-value>web/WEB-INF/spring/applicationContext.xml</param-value>
-    </context-param>
+    <groupId>com.jeonghwan</groupId>
+    <artifactId>spring_projects</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
-    <!--
-     DispatcherServlet 설정
-     모든 클라이언트의 요청은 dispatcher servlet 부터 받는다.
-     servlet 생성될 때 스프링 설정파일도 같이 생성
-    -->
-    <servlet>
-        <servlet-name>dispatcher</servlet-name>  <!-- 서블릿 명칭 -->
-        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class> <!-- 가져오기 -->
-        <!-- 초기 스프링 설정파일 (스프링 컨테이너 지정)
-         DispatcherServlet 을 서블릿으로 등록함
-         HandlerMapping, HandlerAdapter.. 등등은 자동으로 생성된다 ㅎ
-        -->
-        <init-param>
-            <param-name>contextConfigLocation</param-name>
-            <param-value>web/WEB-INF/spring/appServlet/dispatcher-servlet.xml</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <!--
-     DispatcherServlet 매핑
-     모든 요청에서 처음 만나는 부분은 DispatcherServlet 이기 떄문에 Root로 설정
-    -->
-    <servlet-mapping>
-        <servlet-name>dispatcher</servlet-name> <!-- 서블릿 명칭 -->
-        <url-pattern>/</url-pattern> <!-- *.form -> / 바꾸기-->
-    </servlet-mapping>
+    <dependencies>
 
-    <!-- utf-8 설정 -->
-    <filter>
-        <filter-name>CharacterEncodingFilter</filter-name>
-        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-        <init-param>
-            <param-name>encoding</param-name>
-            <param-value>UTF-8</param-value>
-        </init-param>
-        <init-param>
-            <param-name>forceEncoding</param-name>
-            <param-value>true</param-value>
-        </init-param>
-    </filter>
-    <filter-mapping>
-        <filter-name>CharacterEncodingFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
-</web-app>
+        <!-- Spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.0.5.release</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.0.5.release</version>
+        </dependency>
+
+        <!-- servlet -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <!-- @Inject -->
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+    </dependencies>
+</project>

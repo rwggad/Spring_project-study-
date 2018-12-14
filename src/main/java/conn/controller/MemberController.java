@@ -1,6 +1,6 @@
 package conn.controller;
 
-import conn.Member;
+import conn.Model.Member;
 import conn.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

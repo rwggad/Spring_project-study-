@@ -1,6 +1,6 @@
 package conn.interfaces;
 
-import conn.WordSet;
+import conn.Model.WordSet;
 
 import java.util.ArrayList;
 

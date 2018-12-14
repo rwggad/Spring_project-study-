@@ -24,6 +24,7 @@ public class HomeController {
      * @ModelAttribute annotation 을 준 메서드는 어떠한 메서드가 호출될 때 같이 호출이 된다.
      *
      * serverTime로 view에서 바로 사용이 가능*/
+
     @ModelAttribute("cp")
     public String getContextPath(HttpServletRequest request){
         return request.getContextPath();
@@ -37,7 +38,7 @@ public class HomeController {
     }
 
     @RequestMapping(value = "/")
-    public String hello(){
+    public String index(){
         return "index";
     }
 }

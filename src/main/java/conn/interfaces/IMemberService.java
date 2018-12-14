@@ -1,6 +1,6 @@
 package conn.interfaces;
 
-import conn.Member;
+import conn.Model.Member;
 
 public interface IMemberService {
     int Register(Member member);

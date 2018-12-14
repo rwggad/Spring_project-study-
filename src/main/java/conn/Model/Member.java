@@ -1,4 +1,4 @@
-package conn;
+package conn.Model;
 
 public class Member {
     private String memId;

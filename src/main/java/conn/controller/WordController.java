@@ -1,6 +1,6 @@
 package conn.controller;
 
-import conn.WordSet;
+import conn.Model.WordSet;
 import conn.service.WordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

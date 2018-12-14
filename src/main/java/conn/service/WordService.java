@@ -1,6 +1,6 @@
 package conn.service;
 
-import conn.WordSet;
+import conn.Model.WordSet;
 import conn.dao.WordDao;
 import conn.interfaces.IWordService;
 import org.springframework.beans.factory.annotation.Autowired;

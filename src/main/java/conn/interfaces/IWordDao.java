@@ -1,6 +1,6 @@
 package conn.interfaces;
 
-import conn.WordSet;
+import conn.Model.WordSet;
 
 public interface IWordDao {
     WordSet select(String word);

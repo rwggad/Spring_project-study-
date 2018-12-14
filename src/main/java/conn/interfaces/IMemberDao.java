@@ -1,6 +1,6 @@
 package conn.interfaces;
 
-import conn.Member;
+import conn.Model.Member;
 
 public interface IMemberDao {
     Member select(Member member);

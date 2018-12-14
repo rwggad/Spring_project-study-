@@ -1,6 +1,6 @@
 package conn.dao;
 
-import conn.Member;
+import conn.Model.Member;
 import conn.interfaces.IMemberDao;
 import org.springframework.stereotype.Repository;
 

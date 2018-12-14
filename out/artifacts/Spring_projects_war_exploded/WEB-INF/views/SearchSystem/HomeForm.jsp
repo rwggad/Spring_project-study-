@@ -9,10 +9,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 
+<link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/normal.css"/>
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/normal.css?after"/>
 </head>
 <body>
 <h2>Search Word Home</h2>
@@ -36,7 +36,7 @@
         <tbody >
         <c:forEach items="${wordList}" var="word">
             <tr>
-                <td>user</td>
+                <td>${word.insertUser}</td>
                 <td>${word.wordKey}</td>
                 <td>${word.wordValue}</td>
             </tr>

@@ -1,5 +1,6 @@
 package conn.controller;
 
+import conn.Model.Member;
 import conn.Model.WordSet;
 import conn.service.WordService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -44,7 +46,9 @@ public class WordController {
 
     /** insert */
     @RequestMapping("/InsertForm")
-    public String InsertForm(WordSet wordSet){
+    public String InsertForm(Model model, WordSet wordSet, HttpSession session){
+        Member tryMember = (Member) session.getAttribute("memberSession");
+        model.addAttribute("tryMember", tryMember);
         return "SearchSystem/InsertForm";
     }
 

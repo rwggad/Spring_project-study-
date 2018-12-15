@@ -62,7 +62,7 @@
           <entry key="css" value="111" />
           <entry key="html" value="52" />
           <entry key="java" value="15528" />
-          <entry key="jsp" value="2352" />
+          <entry key="jsp" value="2355" />
           <entry key="xml" value="1992" />
         </counts>
       </usages-collector>
@@ -71,7 +71,7 @@
           <entry key="CSS" value="111" />
           <entry key="HTML" value="52" />
           <entry key="JAVA" value="15528" />
-          <entry key="JSP" value="2352" />
+          <entry key="JSP" value="2355" />
           <entry key="XML" value="1992" />
         </counts>
       </usages-collector>
@@ -82,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/SearchSystem/HomeForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="66" column="25" lean-forward="true" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+            <state relative-caret-position="300">
+              <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#0;n#tr#3;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -475,7 +475,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544860196677" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544860632926" />
     <property name="last_opened_file_path" value="C:/Server/oracle/sqldeveloper-18.3.0.277.2354-x64/sqldeveloper/jdbc/lib/ojdbc8.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -664,18 +664,17 @@
       <workItem from="1544780112997" duration="1470000" />
       <workItem from="1544790104823" duration="7753000" />
       <workItem from="1544849110247" duration="4287000" />
-      <workItem from="1544855200182" duration="4883000" />
+      <workItem from="1544855200182" duration="5302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75966000" />
+    <option name="totallyTimeSpent" value="76385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="33" width="1455" height="935" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26021504" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26021504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1015,8 +1014,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/SearchSystem/HomeForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="66" column="25" lean-forward="true" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+        <state relative-caret-position="300">
+          <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#3;n#table#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />

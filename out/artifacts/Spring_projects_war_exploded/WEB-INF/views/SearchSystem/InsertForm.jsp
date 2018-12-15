@@ -23,13 +23,6 @@
     <form:form action="${cp}/SearchSystem/Insert" method="post" commandName="wordSet">
         <from:hidden path="insertUser" value="${tryMember.memId}"/>
         <table>
-            <thead>
-            <tr>
-                <td colspan="3">
-                    어떤 단어를 찾으시겠습니까?
-                </td>
-            </tr>
-            </thead>
             <tbody>
             <tr>
                 <td>Word</td>

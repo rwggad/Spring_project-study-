@@ -39,17 +39,36 @@ public class WordController {
 
     /** Home Form Location*/
     @RequestMapping("/HomeForm")
-    public String Home(Model model){
-        List<WordSet> list = service.SearchAll();
-        model.addAttribute("wordList", list);
+    public String Home(WordSet wordSet){
+        return "SearchSystem/HomeForm";
+    }
+
+    /** Search */
+    @RequestMapping(value = "/Search", method = RequestMethod.POST)
+    public String Search(Model model, WordSet wordSet){
+        WordSet selectWord = service.Search(wordSet.getWordKey()); // 단어를 가져옴
+        if(selectWord != null){ // 단어가 있다면
+            List<WordSet> wordList = new ArrayList<WordSet>(); // List 형태로 반환
+            wordList.add(service.Search(wordSet.getWordKey())); // Model에 추가
+            model.addAttribute("wordList",wordList);
+        }else{
+            model.addAttribute("wordList", null);
+        }
+        return "SearchSystem/HomeForm";
+    }
+
+    @RequestMapping(value = "/AllSearch", method = RequestMethod.POST)
+    public String AllSearch(Model model, WordSet wordSet){
+        List<WordSet> wordList = service.SearchAll(); // 전체 단어 가져옴
+        model.addAttribute("wordList",wordList); // List형태로 전달
         return "SearchSystem/HomeForm";
     }
 
     /** insert */
     @RequestMapping("/InsertForm")
     public String InsertForm(Model model, WordSet wordSet, HttpSession session){
-        Member tryMember = (Member) session.getAttribute("memberSession");
-        model.addAttribute("tryMember", tryMember);
+        Member tryMember = (Member) session.getAttribute("memberSession"); // 회원 정보 세션들고온다.
+        model.addAttribute("tryMember", tryMember); // 단어를 등록하려는 회원 정보를 model에 담아서 전달
         return "SearchSystem/InsertForm";
     }
 
@@ -76,23 +95,5 @@ public class WordController {
         }else{ // 없을 때
             return "SearchSystem/DeleteFail";
         }
-    }
-
-    /** Search */
-    @RequestMapping(value = "/SearchForm")
-    public String SearchForm(WordSet wordSet){
-        return "SearchSystem/SearchForm";
-    }
-
-    @RequestMapping(value = "/Search", method = RequestMethod.POST)
-    public String Search(Model model, WordSet wordSet){
-        String key = wordSet.getWordKey();
-        WordSet result = service.Search(key);
-        if(result == null){
-            model.addAttribute("result", null);
-        }else{
-            model.addAttribute("result",result);
-        }
-        return "SearchSystem/SearchForm";
     }
 }

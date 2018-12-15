@@ -38,6 +38,10 @@
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name> <!-- 서블릿 명칭 -->
         <url-pattern>/</url-pattern> <!-- *.form -> / 바꾸기-->
+        <url-pattern>*.js</url-pattern>
+        <url-pattern>*.css</url-pattern>
+        <url-pattern>*.gif</url-pattern>
+        <url-pattern>*.jpg</url-pattern>
     </servlet-mapping>
 
     <!-- utf-8 설정 -->

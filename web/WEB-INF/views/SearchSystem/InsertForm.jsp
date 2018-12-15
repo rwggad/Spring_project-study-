@@ -13,32 +13,42 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/normal.css" />
+    <link rel="stylesheet" type="text/css" href="${cp}/resources/css/normal.css">
 </head>
 
 <tbody>
-    <h2>Insert Word</h2>
-    <h6>SeverTime : ${serverTime}</h6>
-    <div>
-        <form:form action="${cp}/SearchSystem/Insert" method="post" commandName="wordSet">
-            <from:hidden path="insertUser" value="${tryMember.memId}"/>
-            <table>
-                <tr>
-                    <td>Word</td>
-                    <td><form:input path="wordKey"/></td>
-                </tr>
-                <tr>
-                    <td>Content</td>
-                    <td><form:input path="wordValue"/></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" value="Insert" >
-                    </td>
-                </tr>
-            </table>
-        </form:form>
-    </div>
-    <a href="${cp}/SearchSystem/HomeForm"> BACK </a>
+<h2>Insert Word</h2>
+<h6>SeverTime : ${serverTime}</h6>
+<div>
+    <form:form action="${cp}/SearchSystem/Insert" method="post" commandName="wordSet">
+        <from:hidden path="insertUser" value="${tryMember.memId}"/>
+        <table>
+            <thead>
+            <tr>
+                <td colspan="3">
+                    어떤 단어를 찾으시겠습니까?
+                </td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Word</td>
+                <td><form:input path="wordKey"/></td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td><form:input path="wordValue"/></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Insert">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form:form>
+</div>
+<br>
+<a href="${cp}/SearchSystem/HomeForm"> BACK </a>
 </tbody>
 </html>

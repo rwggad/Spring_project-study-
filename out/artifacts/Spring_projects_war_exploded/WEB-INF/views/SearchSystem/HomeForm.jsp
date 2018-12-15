@@ -9,10 +9,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 
-<link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/normal.css"/>
 <html>
 <head>
     <title>Title</title>
+    <link rel ="stylesheet" type="text/css" href="${cp}/resources/css/normal.css">
 </head>
 <body>
 <h2>Search Word Home</h2>

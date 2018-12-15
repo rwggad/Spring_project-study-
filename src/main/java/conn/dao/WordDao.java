@@ -19,9 +19,9 @@ import java.util.List;
 
 /**
  * xml파일에 명시하지 않고 스프링 컨테이너로 Bean 생성방법 */
-//@Repository
+//@Service
 //@Component
-@Service
+@Repository
 public class WordDao implements IWordDao {
     private String driver = "oracle.jdbc.driver.OracleDriver";
     private String url = "jdbc:oracle:thin:@localhost:1521:xe";
@@ -68,10 +68,13 @@ public class WordDao implements IWordDao {
 
     public List<WordSet> selectAll(){ // 저장된 단어 전부 출력
         String sql = "SELECT * FROM wordSet";
-        List<WordSet> words = null;
         return template.query(sql, new RowMapper<WordSet>() {
                     public WordSet mapRow(ResultSet rs, int i) throws SQLException {
-                        return null;
+                        WordSet selectWord = new WordSet();
+                        selectWord.setInsertUser(rs.getString(1));
+                        selectWord.setWordKey(rs.getString(2));
+                        selectWord.setWordValue(rs.getString(3));
+                        return selectWord;
                     }
                 });
     }

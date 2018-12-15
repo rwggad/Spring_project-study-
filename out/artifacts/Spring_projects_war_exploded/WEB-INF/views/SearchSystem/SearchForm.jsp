@@ -12,7 +12,7 @@
 <html>
 <head>
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="/WEB-INF/resources/css/normal.css" />
+    <link rel ="stylesheet" type="text/css" href="${cp}/resources/css/normal.css">
 </head>
 
 <tbody>

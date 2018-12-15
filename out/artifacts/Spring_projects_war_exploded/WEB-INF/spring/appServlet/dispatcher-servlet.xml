@@ -12,6 +12,12 @@
     <context:component-scan base-package="conn"></context:component-scan> <!-- Component 패키지 지정 -->
 
     <!--
+      웹 context설정에서
+      <mvc:resources mapping="/resources/**" location="/resources/" />가 기본적으로 설정이 되어 있는데, webroot아래의 /resource 폴더에다가 넣으라는 의미이다. mapping은 프로그램상의 접근 위치이고, location이 실제 파일시스템 상 경로이다.
+      즉 웹루트에다가  /images를 적용하고 싶으면 mapping="/image/**" location="/images/" 이런 식으로 바꾸면 된다.
+    -->
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+    <!--
     MVC 작동 방식 2
 
     요청 -> servlet -> Mapping -> Adapter -> 해당 요청의 Controller method 를 거쳐서 Model/View 형식으로 ViewResolver 온다.

@@ -1,5 +1,6 @@
 package conn.dao;
 
+import com.mchange.v2.c3p0.ComboPooledDataSource;
 import conn.Model.Member;
 import conn.interfaces.IMemberDao;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -52,7 +53,13 @@ public class MemberDao implements IMemberDao {
      *                 }
      *             }
      *
-     *  DriverManagerDataSource 는 Spring꺼 사용.. (c3p0 제공하는 DriverManagerDataSource 도 있음)
+     *  DriverManagerDataSource 는 Spring꺼 사용..
+     *  (
+     *  c3p0 제공하는 DriverManagerDataSource 도 있고,
+     *  ComboPooleDataSource도 있음
+     *  Spring 설정 파일을 활용하는 방법도 있음
+     *  )
+     *
      *     */
     private DriverManagerDataSource dataSource; //
     private JdbcTemplate template;
@@ -63,6 +70,16 @@ public class MemberDao implements IMemberDao {
         dataSource.setJdbcUrl(url);
         dataSource.setUser(id);
         dataSource.setPassword(pw);*/
+        // ComboPooleDataSource
+        /*ComboPooledDataSource dataSource;
+        try {
+            dataSource.setDriverClass(driver);
+            dataSource.setJdbcUrl(url);
+            dataSource.setUser(id);
+            dataSource.setPassword(pw);
+        }catch (Exception e){
+            e.printStackTrace();
+        }*/
         // spring
         dataSource = new org.springframework.jdbc.datasource.DriverManagerDataSource();
         dataSource.setDriverClassName(driver);

@@ -2,6 +2,7 @@ package conn.dao;
 
 import conn.Model.WordSet;
 import conn.interfaces.IWordDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.jdbc.core.RowMapper;
@@ -9,6 +10,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
+import javax.sql.DataSource;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -23,20 +25,12 @@ import java.util.List;
 //@Component
 @Repository
 public class WordDao implements IWordDao {
-    private String driver = "oracle.jdbc.driver.OracleDriver";
-    private String url = "jdbc:oracle:thin:@localhost:1521:xe";
-    private String id = "root";
-    private String pw = "root";
-
-    private DriverManagerDataSource dataSource;
+    /**
+     * Spring 설정 파일을 이용한 DataSource*/
     private JdbcTemplate template;
 
-    public WordDao(){
-        this.dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName(driver);
-        dataSource.setUrl(url);
-        dataSource.setUsername(id);
-        dataSource.setPassword(pw);
+    @Autowired
+    public WordDao(DataSource dataSource){
         template = new JdbcTemplate();
         template.setDataSource(dataSource);
     }

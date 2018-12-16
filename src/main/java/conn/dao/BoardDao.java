@@ -96,7 +96,13 @@ public class BoardDao implements IBoardDao {
 
     }
 
-    public int delete(Board board) {
-        return 0;
+    public int delete(final Board board) {
+         String sql = "DELETE FROM board WHERE boardId = ?";
+         return template.update(sql,
+                 new PreparedStatementSetter() {
+                     public void setValues(PreparedStatement preparedStatement) throws SQLException {
+                         preparedStatement.setInt(1, board.getBoardId());
+                     }
+                 });
     }
 }

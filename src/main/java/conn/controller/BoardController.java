@@ -54,7 +54,17 @@ public class BoardController {
         if(service.Register(board) > 0){
             return "redirect:/BoardSystem/HomeForm";
         }else{
-            return "BoardSystem/InsertFail";
+            return "BoardSystem/DBFail";
+        }
+    }
+
+    /** Delete */
+    @RequestMapping(value = "/Delete", method = RequestMethod.POST)
+    public String Delete(Board board){
+        if(service.Remove(board) > 0){
+            return "redirect:/BoardSystem/HomeForm";
+        }else{
+            return "BoardSystem/DBFail";
         }
     }
 

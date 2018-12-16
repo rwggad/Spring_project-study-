@@ -22,15 +22,11 @@ public class BoardService implements IBoardService {
         return this.boardDao.selectAll();
     }
 
-    public Board GetBoard(Board Board) {
-        return null;
-    }
-
     public void Modify(Board Board) {
 
     }
 
     public int Remove(Board Board) {
-        return 0;
+        return this.boardDao.delete(Board);
     }
 }

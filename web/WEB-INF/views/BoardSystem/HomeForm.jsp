@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: rwgga
@@ -35,7 +36,6 @@
 
 <div class="container">
     <button class="btn btn-primary" onclick="location.href='${cp}/BoardSystem/InsertForm'">Insert</button>
-    <button class="btn btn-primary" onclick="location.href='${cp}/BoardSystem/DeleteForm'">Delete</button>
     <hr>
     <div class="container">
         <c:choose>
@@ -46,18 +46,27 @@
             </c:when>
             <c:otherwise>
                 <c:forEach items="${boardList}" var="board">
-                    <div>
-                        <div>
-                            제목 : ${board.boardTitle}
-                        </div>
-                        <div>
-                            작성자 :${board.boardWriter}
-                        </div>
-                        <div>
-                            날짜 : ${board.boardDate}
-                        </div>
-                        <div>
-                                ${board.boardContent}
+                    <div class="jumbotron">
+                        <div>제목 : ${board.boardTitle}</div> <br>
+                        <div>작성자 :${board.boardWriter}</div> <br>
+                        <div>날짜 : ${board.boardDate}</div>
+                        <hr>
+                        <div>${board.boardContent}</div>
+                        <hr>
+                        <div style="float: right;">
+                            <c:if test="${board.boardWriter.equals(memberSession.memId)}">
+                                <form:form action="${cp}/BoardSystem/Delete" method="post" commandName="board">
+                                    <form:hidden path="boardId" value="${board.boardId}"/>
+                                    <form:hidden path="boardWriter" value="${board.boardWriter}"/>
+                                    <form:hidden path="boardTitle" value="${board.boardTitle}"/>
+                                    <form:hidden path="boardContent" value="${board.boardContent}"/>
+                                    <form:hidden path="boardDate" value="${board.boardDate}"/>
+                                    <form:hidden path="boardCnt" value="${board.boardCnt}"/>
+                                    <form:hidden path="ipAddress" value="${board.ipAddress}"/>
+                                    <a class="btn btn-primary" href="/BoardSystem/ModifyForm">Modify</a>
+                                    <input class="btn btn-danger" type="submit" value="Delete">
+                                </form:form>
+                            </c:if>
                         </div>
                     </div>
                 </c:forEach>

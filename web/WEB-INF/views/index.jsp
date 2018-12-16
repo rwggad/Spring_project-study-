@@ -44,6 +44,7 @@
       <h3>Functions</h3>
       <br>
       <a href="${cp}/SearchSystem/HomeForm">Find Word System</a>
+      <a href="${cp}/BaordSystem/HomeForm">Board System</a>
     </c:otherwise>
   </c:choose>
   </body>

@@ -31,8 +31,21 @@ public class WordDao implements IWordDao {
 
     @Autowired
     public WordDao(DataSource dataSource){
-        template = new JdbcTemplate();
-        template.setDataSource(dataSource);
+        this.template = new JdbcTemplate();
+        this.template.setDataSource(dataSource);
+    }
+
+    public List<WordSet> selectAll(){ // 저장된 단어 전부 출력
+        String sql = "SELECT * FROM wordSet";
+        return template.query(sql, new RowMapper<WordSet>() {
+            public WordSet mapRow(ResultSet rs, int i) throws SQLException {
+                WordSet selectWord = new WordSet();
+                selectWord.setInsertUser(rs.getString(1));
+                selectWord.setWordKey(rs.getString(2));
+                selectWord.setWordValue(rs.getString(3));
+                return selectWord;
+            }
+        });
     }
 
     public WordSet select(final String wordKey) {
@@ -60,18 +73,6 @@ public class WordDao implements IWordDao {
         }
     }
 
-    public List<WordSet> selectAll(){ // 저장된 단어 전부 출력
-        String sql = "SELECT * FROM wordSet";
-        return template.query(sql, new RowMapper<WordSet>() {
-                    public WordSet mapRow(ResultSet rs, int i) throws SQLException {
-                        WordSet selectWord = new WordSet();
-                        selectWord.setInsertUser(rs.getString(1));
-                        selectWord.setWordKey(rs.getString(2));
-                        selectWord.setWordValue(rs.getString(3));
-                        return selectWord;
-                    }
-                });
-    }
 
     public int insert(final WordSet wordSet) {
         if(select(wordSet.getWordKey()) == null){

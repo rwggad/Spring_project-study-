@@ -6,7 +6,7 @@ public class Board {
     private String boardTitle; // 제목
     private String boardContent; // 내용
     private String boardDate; // 작성일
-    private String boardCnt; // 조회수
+    private int boardCnt; // 조회수
     private String IpAddress; // ip 주소
 
     public int getBoardId() {
@@ -49,11 +49,11 @@ public class Board {
         this.boardDate = boardDate;
     }
 
-    public String getBoardCnt() {
+    public int getBoardCnt() {
         return boardCnt;
     }
 
-    public void setBoardCnt(String boardCnt) {
+    public void setBoardCnt(int boardCnt) {
         this.boardCnt = boardCnt;
     }
 

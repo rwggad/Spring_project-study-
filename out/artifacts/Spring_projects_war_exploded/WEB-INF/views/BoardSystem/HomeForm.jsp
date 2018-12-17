@@ -63,7 +63,6 @@
                                     <form:hidden path="boardDate" value="${board.boardDate}"/>
                                     <form:hidden path="boardCnt" value="${board.boardCnt}"/>
                                     <form:hidden path="ipAddress" value="${board.ipAddress}"/>
-                                    <a class="btn btn-primary" href="/BoardSystem/ModifyForm">Modify</a>
                                     <input class="btn btn-danger" type="submit" value="Delete">
                                 </form:form>
                             </c:if>

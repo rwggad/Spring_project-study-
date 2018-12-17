@@ -32,7 +32,7 @@
 <div class="container">
     <h6>데이터 베이스 오류..</h6>
     <hr>
-    <a class="btn btn-primary" href="${cp}/BoardSystem/InsertForm"> BACK </a>
+    <a class="btn btn-primary" href="${cp}/BoardSystem/HomeForm"> BACK </a>
 </div>
 
 </body>

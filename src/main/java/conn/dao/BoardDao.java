@@ -96,6 +96,20 @@ public class BoardDao implements IBoardDao {
 
     }
 
+    public int update(final Board board){
+        final String sql = "UPDATE board SET boardTitle = ?, boardContent = ?, boardDate = ? WHERE boardId = ?";
+        return template.update(sql,
+                new PreparedStatementSetter() {
+                    public void setValues(PreparedStatement preparedStatement) throws SQLException {
+                        preparedStatement.setString(1, board.getBoardTitle());
+                        preparedStatement.setString(2, board.getBoardContent());
+                        preparedStatement.setString(3, board.getBoardDate());
+                        preparedStatement.setInt(4, board.getBoardId());
+                    }
+                });
+    }
+
+
     public int delete(final Board board) {
          String sql = "DELETE FROM board WHERE boardId = ?";
          return template.update(sql,

@@ -7,23 +7,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbb2859b-a793-4b90-9233-481ff86af636" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/BoardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/BoardDao$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/BoardDao$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/BoardDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/BoardDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/interfaces/IBoardDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/interfaces/IBoardDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/interfaces/IBoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/interfaces/IBoardService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/service/BoardService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/BoardSystem/DBFail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/BoardSystem/DBFail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/BoardSystem/HomeForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/BoardSystem/HomeForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/BoardSystem/InsertFail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/BoardSystem/InsertForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/BoardSystem/InsertForm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conn/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/controller/BoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conn/dao/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/dao/BoardDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/conn/interfaces/IBoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/interfaces/IBoardDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conn/interfaces/IBoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/interfaces/IBoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/conn/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/conn/service/BoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/conn/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/controller/BoardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/BoardDao$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/dao/BoardDao$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/BoardDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/dao/BoardDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/conn/interfaces/IBoardDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/interfaces/IBoardDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/conn/interfaces/IBoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/interfaces/IBoardService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/conn/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/conn/service/BoardService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/DBFail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/dbFail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/InsertFail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/DBFail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/InsertForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/InsertForm.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,10 +45,10 @@
     <session id="1546652744">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="23" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.20" value="2" />
+          <entry key="project.open.time.20" value="3" />
           <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.22" value="3" />
           <entry key="project.open.time.24" value="1" />
@@ -50,9 +58,10 @@
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,9 +70,9 @@
           <entry key="css" value="6" />
           <entry key="html" value="48" />
           <entry key="iml" value="6" />
-          <entry key="java" value="229" />
-          <entry key="jsp" value="226" />
-          <entry key="xml" value="40" />
+          <entry key="java" value="239" />
+          <entry key="jsp" value="234" />
+          <entry key="xml" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -72,9 +81,9 @@
           <entry key="CSS" value="6" />
           <entry key="HTML" value="48" />
           <entry key="IDEA_MODULE" value="6" />
-          <entry key="JAVA" value="229" />
-          <entry key="JSP" value="226" />
-          <entry key="XML" value="40" />
+          <entry key="JAVA" value="239" />
+          <entry key="JSP" value="234" />
+          <entry key="XML" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -82,8 +91,8 @@
           <entry key="css" value="111" />
           <entry key="dummy" value="10" />
           <entry key="html" value="52" />
-          <entry key="java" value="18999" />
-          <entry key="jsp" value="5135" />
+          <entry key="java" value="19837" />
+          <entry key="jsp" value="5766" />
           <entry key="xml" value="2241" />
         </counts>
       </usages-collector>
@@ -91,8 +100,8 @@
         <counts>
           <entry key="CSS" value="111" />
           <entry key="HTML" value="52" />
-          <entry key="JAVA" value="18999" />
-          <entry key="JSP" value="5135" />
+          <entry key="JAVA" value="19837" />
+          <entry key="JSP" value="5766" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="XML" value="2241" />
         </counts>
@@ -104,63 +113,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/conn/controller/BoardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="104">
+              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#817#818#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/spring-web-4.3.18.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/conn/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="117" selection-start-line="117" selection-end-line="117" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/conn/dao/WordDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="39" column="35" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-              <folding>
-                <element signature="e#1168#1555#0" expanded="true" />
-                <element signature="e#1554#1555#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/DBFail.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/InsertForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="39" column="61" lean-forward="true" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-              <folding>
-                <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="217">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -168,12 +136,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/conn/dao/BoardDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="518">
+              <caret line="102" column="40" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4281#4509#0" expanded="true" />
-                <element signature="e#4508#4509#0" expanded="true" />
+                <element signature="e#4565#4566#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -182,14 +148,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/conn/service/BoardService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="227">
+              <caret line="25" column="8" selection-end-line="32" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
+                <element signature="e#572#573#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
                 <element signature="e#668#669#0" expanded="true" />
               </folding>
             </state>
@@ -197,22 +161,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/conn/interfaces/IBoardService.java">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="271">
+              <caret line="56" column="86" selection-start-line="56" selection-start-column="86" selection-end-line="56" selection-end-column="86" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/conn/interfaces/IMemberDao.java">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/LoginSystem/JoinForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="132">
+              <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="35" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/dbFail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/InsertForm.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -240,8 +231,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/conn/Model/WordSet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/conn/interfaces/IMemberDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/conn/dao/Dao.java" />
         <option value="$PROJECT_DIR$/src/main/java/conn/controller/MemberController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -264,7 +253,6 @@
         <option value="$PROJECT_DIR$/src/main/java/conn/Model/Board.java" />
         <option value="$PROJECT_DIR$/src/main/java/conn/dao/WordDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/conn/interfaces/IWordDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/conn/interfaces/IBoardDao.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/SearchSystem/DeleteOk.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/LoginSystem/RemoveOk.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/LoginSystem/RemoveFail.jsp" />
@@ -284,13 +272,16 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/views/SearchSystem/DeleteForm.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/SearchSystem/InsertForm.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/InsertFail.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/InsertForm.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/DeleteFail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/conn/dao/BoardDao.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/InsertForm.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/ModifyForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/conn/interfaces/IBoardService.java" />
         <option value="$PROJECT_DIR$/src/main/java/conn/service/BoardService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/conn/controller/BoardController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/conn/interfaces/IBoardDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/conn/dao/BoardDao.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/dbFail.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/conn/controller/BoardController.java" />
       </list>
     </option>
   </component>
@@ -337,8 +328,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -389,15 +378,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="conn" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="conn" type="462c0819:PsiDirectoryNode" />
-              <item name="Interceptor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
@@ -493,6 +473,14 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="LoginSystem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring_projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring_projects" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="SearchSystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -503,13 +491,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544955546992" />
-    <property name="last_opened_file_path" value="C:/Server/oracle/sqldeveloper-18.3.0.277.2354-x64/sqldeveloper/jdbc/lib/ojdbc8.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545038939349" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -702,17 +692,20 @@
       <workItem from="1544862335429" duration="2565000" />
       <workItem from="1544865055257" duration="106000" />
       <workItem from="1544941370446" duration="14111000" />
+      <workItem from="1545022359520" duration="496000" />
+      <workItem from="1545023094145" duration="76000" />
+      <workItem from="1545035133676" duration="3638000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94195000" />
+    <option name="totallyTimeSpent" value="98968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="33" width="1455" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20071685" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.209319" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -722,8 +715,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32833958" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.29338327" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32833958" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.29338327" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -779,6 +772,14 @@
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/conn/controller/BoardController.java</url>
+          <line>60</line>
+          <properties class="conn.controller.BoardController" method="Delete">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -787,27 +788,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/conn/Interceptor/MemberLoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="45" column="41" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -818,13 +798,7 @@
     <entry file="file://$PROJECT_DIR$/Spring_projects.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/conn/interfaces/IBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/conn/interfaces/IBoard.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/conn/interfaces/IWordService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -832,16 +806,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/conn/Config/DBC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/conn/Config/DBC.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/conn/controller/MemberController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -858,9 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -868,16 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="28" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/conn/dao/MemberDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456">
-          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -950,20 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="60" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/conn/controller/WordController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/conn/Model/WordSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -999,9 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#tbody#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,27 +982,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/LoginSystem/JoinForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="35" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/DeleteFail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/conn/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/DeleteFail.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/conn/interfaces/IMemberService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -1075,13 +990,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/conn/interfaces/IBoardDao.java">
+    <entry file="jar://$PROJECT_DIR$/lib/spring-web-4.3.18.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1900">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/conn/dao/WordDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/conn/interfaces/IMemberDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/conn/controller/WordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/conn/dao/MemberDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/conn/service/WordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1092,99 +1046,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/DBFail.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/conn/interfaces/IBoardDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+        <state relative-caret-position="245">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/InsertForm.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/conn/interfaces/IBoardService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="39" column="61" lean-forward="true" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
+        <state relative-caret-position="212">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-web-4.3.18.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/LoginSystem/JoinForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        <state relative-caret-position="132">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="35" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="50" column="22" lean-forward="true" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/dbFail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/conn/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/ModifyForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="56" column="86" selection-start-line="56" selection-start-column="86" selection-end-line="56" selection-end-column="86" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/conn/controller/BoardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="104">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#817#818#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/conn/dao/BoardDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="518">
+          <caret line="102" column="40" selection-start-line="102" selection-start-column="40" selection-end-line="102" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4281#4509#0" expanded="true" />
-            <element signature="e#4508#4509#0" expanded="true" />
+            <element signature="e#4565#4566#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/conn/dao/WordDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="39" column="35" lean-forward="true" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-          <folding>
-            <element signature="e#1168#1555#0" expanded="true" />
-            <element signature="e#1554#1555#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/conn/interfaces/IBoardService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/conn/interfaces/IMemberDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/conn/service/BoardService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="227">
+          <caret line="25" column="8" selection-end-line="32" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
             <element signature="e#668#669#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/InsertForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#div#4;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="359">
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
         </state>
       </provider>
     </entry>

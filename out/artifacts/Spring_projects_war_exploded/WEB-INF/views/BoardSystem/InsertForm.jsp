@@ -38,8 +38,10 @@
     <form:form action="${cp}/BoardSystem/Insert" method="post" commandName="board">
         <form:hidden path="boardWriter" value="${tryMember.memId}"/>
         <form:hidden path="boardDate" value="${serverTime}"/>
-        <div><form:input class="btn btn-outline-secondary" path="boardTitle" placeholder="제목"/></div> <br>
-        <div><form:textarea class="btn btn-outline-secondary" path="boardContent" placeholder="내용"/></div> <br>
+        <div><form:input class="btn btn-outline-secondary" path="boardTitle"
+                         placeholder="제목"/></div> <br>
+        <div><form:textarea class="btn btn-outline-secondary" path="boardContent"
+                            placeholder="내용"/></div> <br>
         <hr/>
         <div style="float:left;">
             <input class="btn btn-primary" type="submit" value="Insert">

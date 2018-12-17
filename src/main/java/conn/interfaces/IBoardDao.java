@@ -9,5 +9,6 @@ public interface IBoardDao {
     List<Board> selectAll();
     Board select(Board board);
     int insert(Board board);
+    int update(Board board);
     int delete(Board board);
 }

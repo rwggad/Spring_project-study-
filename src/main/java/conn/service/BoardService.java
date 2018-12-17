@@ -22,8 +22,8 @@ public class BoardService implements IBoardService {
         return this.boardDao.selectAll();
     }
 
-    public void Modify(Board Board) {
-
+    public int Modify(Board Board) {
+        return this.boardDao.update(Board);
     }
 
     public int Remove(Board Board) {

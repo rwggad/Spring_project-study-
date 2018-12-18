@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
+import javax.jws.Oneway;
 import javax.sql.DataSource;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -40,7 +41,8 @@ public class ClinicDao {
                 }, new RowMapper<PetType>() {
                     public PetType mapRow(ResultSet resultSet, int i) throws SQLException {
                         PetType type = new PetType();
-                        type.setName(resultSet.getString(1));
+                        type.setId(resultSet.getInt(1));
+                        type.setName(resultSet.getString(2));
                         return type;
                     }
                 });
@@ -82,7 +84,7 @@ public class ClinicDao {
     }
 
     /**
-     * 방문자 정보 들고오기
+     * 전체 방문자 정보 들고오기
      */
     public List<Owner> select_owners() {
         //id, 첫번째 이름, 두번째 이름, 주소, 도시, 핸드폰 번호)
@@ -97,10 +99,42 @@ public class ClinicDao {
                         owner.setAddress(resultSet.getString(4));
                         owner.setCity(resultSet.getString(5));
                         owner.setPhoneNUmber(resultSet.getString(6));
-                        owner.setPets(select_pets(owner));
+                        List<Pet> OwnerPetLst = select_pets(owner);
+                        owner.setPets(OwnerPetLst);
                         return owner;
                     }
                 });
-        return null;
+        return ownerList;
+    }
+    /**
+     * 특정 방문자 정보 들고오기 */
+    public Owner select_owner(final int id){
+        List<Owner> owners = null;
+        String sql = "SELECT * FROM owners WHERE id = ?";
+        owners = template.query(sql,
+                new PreparedStatementSetter() {
+                    public void setValues(PreparedStatement preparedStatement) throws SQLException {
+                        preparedStatement.setInt(1, id);
+                    }
+                },
+                new RowMapper<Owner>() {
+                    public Owner mapRow(ResultSet resultSet, int i) throws SQLException {
+                        Owner owner = new Owner();
+                        owner.setId(resultSet.getInt(1));
+                        owner.setFirstName(resultSet.getString(2));
+                        owner.setLastName(resultSet.getString(3));
+                        owner.setAddress(resultSet.getString(4));
+                        owner.setCity(resultSet.getString(5));
+                        owner.setPhoneNUmber(resultSet.getString(6));
+                        List<Pet> OwnerPetLst = select_pets(owner);
+                        owner.setPets(OwnerPetLst);
+                        return owner;
+                    }
+                });
+        if(owners.isEmpty()){
+            return null;
+        }else{
+            return owners.get(0);
+        }
     }
 }

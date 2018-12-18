@@ -23,25 +23,41 @@
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-light">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <a class="navbar-brand" href="${cp}/PetClinic/HomeForm">Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav nav-pills mr-auto">
-            <a class="nav-item nav-link active" href="${cp}/PetClinic/FindOwnersForm">FIND OWNERS</a>
-            <a class="nav-item nav-link" href="${cp}/PetClinic/VeterinariansForm">VETERINARIANS</a>
-            <a class="nav-item nav-link disabled" href="${cp}/PetClinic/ErrorForm">ERROR</a>
+            <a class="nav-item nav-link active" href="${cp}/PetClinic/FindForm">FIND OWNERS</a>
+            <a class="nav-item nav-link" href="#">VETERINARIANS</a>
+            <a class="nav-item nav-link" href="#">ERROR</a>
         </ul>
     </div>
 </nav>
 <br>
 <div class="container">
-    ${Owners.size()}
+    <div>
+        <p>
+        <h4>Find Owners</h4>
+        </p>
+        <div>
+            <form:form action="${cp}/PetClinic/Find" method="post" commandName="owner">
+                <p>
+                    <form:input path="lastName" cssStyle="width: 100%; margin-left: 150px; padding-left: 10px"
+                                placeholder="last Name"/>
+                </p>
+                <p style="margin-left: 150px">
+                    <input class="btn btn-dark" type="submit" value="Find Owner">
+                </p>
+            </form:form>
+        </div>
+        <button class="btn btn-dark" value="Add Owner" onclick="location.href='#'">Add Owner</button>
+    </div>
 </div>
-
 </body>
 </html>

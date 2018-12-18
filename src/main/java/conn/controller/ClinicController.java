@@ -41,9 +41,9 @@ public class ClinicController {
     }
 
     /** FindOwnersForm*/
-    @RequestMapping("/FindOwnersForm")
+    @RequestMapping("/FindForm")
     public String FindOwnersForm(Owner owner){
-        return "/PetClinic/FindOwnersForm";
+        return "PetClinic/FindForm";
     }
     @RequestMapping(value = "/Find", method = RequestMethod.POST)
     public String Find(Model model, Owner owner){
@@ -53,18 +53,15 @@ public class ClinicController {
         }else{
             model.addAttribute("Owners", null);
         }
-        return "/PetClinic/Find";
+        return "PetClinic/FindResultForm";
     }
 
-    /** VeterinariansForm*/
-    @RequestMapping("/VeterinariansForm")
-    public String VeterinariansForm(){
-        return "/PetClinic/VeterinariansForm";
-    }
 
-    /** ErrorForm*/
-    @RequestMapping("/ErrorForm")
-    public String ErrorForm(){
-        return "/PetClinic/ErrorForm";
+    /** Owner From*/
+    @RequestMapping("OwnerForm")
+    public String OwnerForm(Model model, @RequestParam(value = "id") int id){
+        Owner owner = service.getOwner(id);
+        model.addAttribute("Owner", owner);
+        return "PetClinic/OwnerForm";
     }
 }

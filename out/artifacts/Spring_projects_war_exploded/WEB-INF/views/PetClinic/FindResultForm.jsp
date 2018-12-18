@@ -23,7 +23,7 @@
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
 </head>
-<body class="bg-light">
+<body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <a class="navbar-brand" href="${cp}/PetClinic/HomeForm">Home</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -43,21 +43,46 @@
 <div class="container">
     <div>
         <p>
-            <h4>Find Owners</h4>
+        <h4>Owners</h4>
         </p>
         <div>
-            <form:form action="${cp}/PetClinic/Find" method="post" commandName="owner">
-                <p>
-                    <form:input path="lastName" cssStyle="width: 100%; margin-left: 150px; padding-left: 10px"
-                                placeholder="last Name"/>
-                </p>
-                <p style="margin-left: 150px">
-                    <input class="btn btn-dark" type="submit" value="Find Owner">
-                </p>
-            </form:form>
+            <table class="table table-hover table-striped">
+                <thead class="table-dark">
+                <tr>
+                    <td>Name</td>
+                    <td>Address</td>
+                    <td>City</td>
+                    <td>Telephone</td>
+                    <td>Pets</td>
+                </tr>
+                </thead>
+                <tbody>
+                <c:choose>
+                    <c:when test="${empty Owners}">
+                        <tr>
+                            <td colspan="5">Empty Owners..</td>
+                        </tr>
+                    </c:when>
+                    <c:otherwise>
+                        <c:forEach items="${Owners}" var="owner">
+                            <tr>
+                                <td>
+                                    <a href="${cp}/PetClinic/OwnerForm?id=${owner.id}">${owner.firstName} ${owner.lastName}</a>
+                                </td>
+                                <td>${owner.address}</td>
+                                <td>${owner.city}</td>
+                                <td>${owner.phoneNUmber}</td>
+                                <td>${owner.pets.get(0).name}</td>
+                            </tr>
+                        </c:forEach>
+                    </c:otherwise>
+                </c:choose>
+                </tbody>
+            </table>
         </div>
-        <button class="btn btn-dark" value="Add Owner" onclick="location.href='#'">Add Owner</button>
     </div>
-
+</div>
+<br>
+<br>
 </body>
 </html>

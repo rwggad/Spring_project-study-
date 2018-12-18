@@ -32,9 +32,9 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav nav-pills mr-auto">
-        <a class="nav-item nav-link" href="${cp}/PetClinic/FindOwnersForm">FIND OWNERS</a>
-        <a class="nav-item nav-link" href="${cp}/PetClinic/VeterinariansForm">VETERINARIANS</a>
-        <a class="nav-item nav-link" href="${cp}/PetClinic/ErrorForm">ERROR</a>
+        <a class="nav-item nav-link" href="${cp}/PetClinic/FindForm">FIND OWNERS</a>
+        <a class="nav-item nav-link" href="#">VETERINARIANS</a>
+        <a class="nav-item nav-link" href="#">ERROR</a>
     </ul>
     </div>
 </nav>

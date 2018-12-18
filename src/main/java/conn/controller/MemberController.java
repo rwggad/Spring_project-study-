@@ -94,8 +94,13 @@ public class MemberController {
 
     /** Login */
     @RequestMapping("LoginSystem/LoginForm")
-    public String LoginForm(Member member){
-        return "LoginSystem/LoginForm";
+    public String LoginForm(Member member, HttpSession session){
+        Member isLogin = (Member) session.getAttribute("memberSession");
+        if(isLogin == null){ // 로그인 안한 상태에서 접근
+            return "LoginSystem/LoginForm";
+        }else{
+            return "redirect:/";
+        }
     }
 
     @RequestMapping(value = "LoginSystem/Login", method = RequestMethod.POST)

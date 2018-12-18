@@ -76,7 +76,8 @@
         <button class="btn btn-success" onclick="location.href='${cp}/'">GO MAIN</button>
     </div>
 </div>
-</div>
+<br>
+<br>
 
 </body>
 </html>

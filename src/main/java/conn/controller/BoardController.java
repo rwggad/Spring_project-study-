@@ -56,6 +56,12 @@ public class BoardController {
         }
     }
 
+    /** Modify*/
+    @RequestMapping("/ModifyForm")
+    public String ModifyForm(Board board){
+        return "BoardSystem/ModifyForm";
+    }
+
     /** Delete */
     @RequestMapping(value = "/Delete", method = RequestMethod.POST)
     public String Delete(Board board){

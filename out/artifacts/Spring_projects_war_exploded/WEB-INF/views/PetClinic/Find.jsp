@@ -40,16 +40,7 @@
 </nav>
 <br>
 <div class="container">
-    <div>
-        <p><String>Find Owners</String></p>
-        <div>
-            <form:form action="${cp}/PetClinic/FindOwners" method="post">
-                <form:input path="lastName"></form:input>
-                <input type="submit" value="Find Owner">
-            </form:form>
-        </div>
-        <button class="btn btn-dark" value="Add Owner" onclick="location.href='#'"></button>
-    </div>
+    ${Owners.size()}
 </div>
 
 </body>

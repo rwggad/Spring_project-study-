@@ -42,12 +42,12 @@ public class ClinicController {
 
     /** FindOwnersForm*/
     @RequestMapping("/FindOwnersForm")
-    public String FindOwnersForm(){
+    public String FindOwnersForm(Owner owner){
         return "/PetClinic/FindOwnersForm";
     }
     @RequestMapping(value = "/Find", method = RequestMethod.POST)
-    public String Find(Model model, @RequestParam(value = "lastName") String lastName){
-        if(lastName.equals("")){ // 이름을 입력안하면 모든 사람의 정보가 넘어옴
+    public String Find(Model model, Owner owner){
+        if(owner.getLastName().equals("")){ // 이름을 입력안하면 모든 사람의 정보가 넘어옴
             List<Owner> owners = service.getOwners();
             model.addAttribute("Owners", owners);
         }else{

@@ -18,11 +18,10 @@ import java.util.List;
 @Repository
 public class ClinicDao {
 
-    @Autowired
-    private DataSource dataSource;
     private JdbcTemplate template;
 
-    public ClinicDao() {
+    @Autowired
+    public ClinicDao(DataSource dataSource) {
         this.template = new JdbcTemplate();
         template.setDataSource(dataSource);
     }
@@ -57,7 +56,7 @@ public class ClinicDao {
      */
     public List<Pet> select_pets(final Owner owner) {
         List<Pet> petList = null;
-        String sql = "SELECT * FROM pet WHERE ownerId = ?";
+        String sql = "SELECT * FROM pets WHERE id = ?";
         petList = template.query(sql,
                 new PreparedStatementSetter() {
                     public void setValues(PreparedStatement preparedStatement) throws SQLException {

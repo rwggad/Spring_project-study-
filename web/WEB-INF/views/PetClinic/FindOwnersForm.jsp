@@ -23,10 +23,11 @@
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-light">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <a class="navbar-brand" href="${cp}/PetClinic/HomeForm">Home</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -41,16 +42,22 @@
 <br>
 <div class="container">
     <div>
-        <p><String>Find Owners</String></p>
+        <p>
+            <h4>Find Owners</h4>
+        </p>
         <div>
-            <form:form action="${cp}/PetClinic/FindOwners" method="post" commandName="owner">
-                <form:input path="#"></form:input>
-                <input type="submit" value="Find Owner">
+            <form:form action="${cp}/PetClinic/Find" method="post" commandName="owner">
+                <p>
+                    <form:input path="lastName" cssStyle="width: 100%; margin-left: 150px; padding-left: 10px"
+                                placeholder="last Name"/>
+                </p>
+                <p style="margin-left: 150px">
+                    <input class="btn btn-dark" type="submit" value="Find Owner">
+                </p>
             </form:form>
         </div>
-        <button class="btn btn-dark" value="Add Owner" onclick="location.href='#'"></button>
+        <button class="btn btn-dark" value="Add Owner" onclick="location.href='#'">Add Owner</button>
     </div>
-</div>
 
 </body>
 </html>

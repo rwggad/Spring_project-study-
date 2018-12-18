@@ -33,9 +33,9 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav nav-pills mr-auto">
-            <a class="nav-item nav-link active" href="${cp}/PetClinic/FindOwnersForm">FIND OWNERS</a>
-            <a class="nav-item nav-link" href="${cp}/PetClinic/VeterinariansForm">VETERINARIANS</a>
-            <a class="nav-item nav-link disabled" href="${cp}/PetClinic/ErrorForm">ERROR</a>
+            <a class="nav-item nav-link active" href="${cp}/PetClinic/FindForm">FIND OWNERS</a>
+            <a class="nav-item nav-link" href="#">VETERINARIANS</a>
+            <a class="nav-item nav-link" href="#">ERROR</a>
         </ul>
     </div>
 </nav>
@@ -56,7 +56,7 @@
                 </p>
             </form:form>
         </div>
-        <button class="btn btn-dark" value="Add Owner" onclick="location.href='#'">Add Owner</button>
+        <button class="btn btn-dark" value="Add Owner" onclick="location.href='${cp}/PetClinic/NewOwnerForm'">Add Owner</button>
     </div>
 </div>
 </body>

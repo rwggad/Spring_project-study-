@@ -43,21 +43,37 @@
 <div class="container">
     <div>
         <p>
-        <h4>Find Owners</h4>
+        <h4>Owner</h4>
         </p>
-        <div>
-            <form:form action="${cp}/PetClinic/Find" method="post" commandName="owner">
-                <p>
-                    <form:input path="lastName" cssStyle="width: 100%; margin-left: 150px; padding-left: 10px"
-                                placeholder="last Name"/>
-                </p>
-                <p style="margin-left: 150px">
-                    <input class="btn btn-dark" type="submit" value="Find Owner">
-                </p>
-            </form:form>
-        </div>
-        <button class="btn btn-dark" value="Add Owner" onclick="location.href='${cp}/PetClinic/NewOwnerForm'">Add Owner</button>
+        <form:form action="${cp}/PetClinic/NewOwner" method="post" commandName="owner">
+            <div class="form-group" style="margin-left: 10%">
+                <form:label path="firstName">First Name </form:label> &nbsp;
+                <form:input path="firstName" cssStyle="width: 80%;"/>
+            </div>
+            <div class="form-group" style="margin-left: 10%">
+                <form:label path="lastName">Last Name </form:label> &nbsp;
+                <form:input path="lastName" cssStyle="width: 80%;"/>
+            </div>
+            <div class="form-group" style="margin-left: 10%">
+                <form:label path="address">Address </form:label> &nbsp;
+                <form:input path="address" cssStyle="width: 80%;"/>
+            </div>
+            <div class="form-group" style="margin-left: 10%">
+                <form:label path="city">City </form:label> &nbsp;
+                <form:input path="city" cssStyle="width: 80%;"/>
+            </div>
+            <div class="form-group" style="margin-left: 10%">
+                <form:label path="phoneNUmber">Telephone</form:label> &nbsp;
+                <form:input path="phoneNUmber" cssStyle="width: 80%;"/>
+            </div>
+
+            <div class="form-group" style="margin-left: 20%">
+                <input class="btn btn-dark" type="submit" value="Add Owner">
+            </div>
+        </form:form>
     </div>
 </div>
+<br>
+<br>
 </body>
 </html>

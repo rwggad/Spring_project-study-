@@ -33,9 +33,9 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav nav-pills mr-auto">
-            <a class="nav-item nav-link active" href="${cp}/PetClinic/FindOwnersForm">FIND OWNERS</a>
-            <a class="nav-item nav-link" href="${cp}/PetClinic/VeterinariansForm">VETERINARIANS</a>
-            <a class="nav-item nav-link disabled" href="${cp}/PetClinic/ErrorForm">ERROR</a>
+            <a class="nav-item nav-link active" href="${cp}/PetClinic/FindForm">FIND OWNERS</a>
+            <a class="nav-item nav-link" href="#">VETERINARIANS</a>
+            <a class="nav-item nav-link" href="#">ERROR</a>
         </ul>
     </div>
 </nav>
@@ -99,8 +99,8 @@
                                 </tr>
                                 </thead>
                                 <tr>
-                                    <td><a href="1/pets/1/edit">Edit Pet</a></td>
-                                    <td><a href="1/pets/1/visits/new">Add Visit</a></td>
+                                    <td><a href="#">Edit Pet</a></td>
+                                    <td><a href="#">Add Visit</a></td>
                                 </tr>
                             </table>
                         </td>

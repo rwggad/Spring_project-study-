@@ -28,7 +28,7 @@ public class ClinicDao {
     }
 
     /**
-     * pet_id 에 맞는 동물 타입 가져오기
+     * pet_id 에 맞는 Pet Type 가져오기
      */
     public PetType select_petType(final int id) {
         List<PetType> pet = null;
@@ -54,7 +54,7 @@ public class ClinicDao {
     }
 
     /**
-     * owner_id 맞는 애완동물 정보 가져오기
+     * owner_id 맞는 Pet 정보 가져오기
      */
     public List<Pet> select_pets(final Owner owner) {
         List<Pet> petList = null;
@@ -84,7 +84,7 @@ public class ClinicDao {
     }
 
     /**
-     * 전체 방문자 정보 들고오기
+     * 전체 Owner 정보 들고오기
      */
     public List<Owner> select_owners() {
         //id, 첫번째 이름, 두번째 이름, 주소, 도시, 핸드폰 번호)
@@ -107,7 +107,7 @@ public class ClinicDao {
         return ownerList;
     }
     /**
-     * 특정 방문자 정보 들고오기 */
+     * 특정 Owner 정보 들고오기 */
     public Owner select_owner(final int id){
         List<Owner> owners = null;
         String sql = "SELECT * FROM owners WHERE id = ?";
@@ -137,4 +137,6 @@ public class ClinicDao {
             return owners.get(0);
         }
     }
+    /**
+     * Owner 정보 DB에 입력 */
 }

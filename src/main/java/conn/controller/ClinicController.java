@@ -40,7 +40,7 @@ public class ClinicController {
         return "/PetClinic/HomeForm";
     }
 
-    /** FindOwnersForm*/
+    /** FindForm*/
     @RequestMapping("/FindForm")
     public String FindOwnersForm(Owner owner){
         return "PetClinic/FindForm";
@@ -56,11 +56,22 @@ public class ClinicController {
         return "PetClinic/FindResultForm";
     }
 
-
     /** Owner From*/
-    @RequestMapping("OwnerForm")
+    @RequestMapping("/OwnerForm")
     public String OwnerForm(Model model, @RequestParam(value = "id") int id){
         Owner owner = service.getOwner(id);
+        model.addAttribute("Owner", owner);
+        return "PetClinic/OwnerForm";
+    }
+
+    /** Add New Owner*/
+    @RequestMapping("/NewOwnerForm")
+    public String NewOwnerForm(Owner owner){
+        return "PetClinic/NewOwnerForm";
+    }
+
+    @RequestMapping(value = "/NewOwner", method = RequestMethod.POST)
+    public String NewOwner(Model model, Owner owner){
         model.addAttribute("Owner", owner);
         return "PetClinic/OwnerForm";
     }

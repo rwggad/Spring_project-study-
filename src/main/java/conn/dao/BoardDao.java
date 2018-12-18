@@ -1,7 +1,7 @@
 package conn.dao;
 
-import conn.Model.Board;
-import conn.interfaces.IBoardDao;
+import conn.Model.BaordModel.Board;
+import conn.interfaces.Board.IBoardDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementSetter;

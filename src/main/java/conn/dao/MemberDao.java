@@ -1,8 +1,7 @@
 package conn.dao;
 
-import com.mchange.v2.c3p0.ComboPooledDataSource;
-import conn.Model.Member;
-import conn.interfaces.IMemberDao;
+import conn.Model.LoginModel.Member;
+import conn.interfaces.Login.IMemberDao;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.jdbc.core.RowMapper;

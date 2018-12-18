@@ -1,7 +1,7 @@
 package conn.controller;
 
-import conn.Model.Member;
-import conn.service.MemberService;
+import conn.Model.LoginModel.Member;
+import conn.service.LoginService.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

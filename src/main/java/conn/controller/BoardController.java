@@ -1,8 +1,8 @@
 package conn.controller;
 
-import conn.Model.Board;
-import conn.Model.Member;
-import conn.service.BoardService;
+import conn.Model.BaordModel.Board;
+import conn.Model.LoginModel.Member;
+import conn.service.BoardService.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,7 +1,6 @@
 package conn.dao;
 
 import conn.Model.LoginModel.Member;
-import conn.interfaces.Login.IMemberDao;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.jdbc.core.RowMapper;
@@ -19,7 +18,7 @@ import java.util.List;
 //@Service
 //@Component
 @Repository
-public class MemberDao implements IMemberDao {
+public class MemberDao {
     /**
      * 오라클과 연결 설정 (드라이버 연결)
      */

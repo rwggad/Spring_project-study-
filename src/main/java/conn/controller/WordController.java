@@ -2,7 +2,7 @@ package conn.controller;
 
 import conn.Model.LoginModel.Member;
 import conn.Model.WordModel.WordSet;
-import conn.service.WordService.WordService;
+import conn.service.WordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

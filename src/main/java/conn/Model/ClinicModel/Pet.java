@@ -1,32 +1,35 @@
 package conn.Model.ClinicModel;
 
-/** Pet 정보 */
-public class Pet {
-    private String birthDate; // 생일
-    private String type; // 동물 타입
-    private Owner owner; // 동물 주인
+import conn.Model.ClinicModel.Base.Name;
+import conn.Model.ClinicModel.Base.PetType;
 
-    public String getBirthDate() {
-        return birthDate;
+
+public class Pet extends Name {
+    private String birthDay; // 동물 생일
+    private PetType petType; // 동물 종류
+    private Owner Owner; // 주인 정보
+
+    public String getBirthDay() {
+        return birthDay;
     }
 
-    public void setBirthDate(String birthDate) {
-        this.birthDate = birthDate;
+    public void setBirthDay(String birthDay) {
+        this.birthDay = birthDay;
     }
 
-    public String getType() {
-        return type;
+    public PetType getPetType() {
+        return petType;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setPetType(PetType petType) {
+        this.petType = petType;
     }
 
-    public Owner getOwner() {
-        return owner;
+    public conn.Model.ClinicModel.Owner getOwner() {
+        return Owner;
     }
 
-    public void setOwner(Owner owner) {
-        this.owner = owner;
+    public void setOwner(conn.Model.ClinicModel.Owner owner) {
+        Owner = owner;
     }
 }

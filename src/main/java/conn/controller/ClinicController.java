@@ -1,17 +1,26 @@
 package conn.controller;
 
+import conn.Model.ClinicModel.Owner;
+import conn.service.ClinicService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 @Controller
 @RequestMapping("/PetClinic")
 public class ClinicController {
+    @Autowired
+    ClinicService service;
 
     @ModelAttribute("cp")
     public String getContextPath(HttpServletRequest request){
@@ -35,6 +44,16 @@ public class ClinicController {
     @RequestMapping("/FindOwnersForm")
     public String FindOwnersForm(){
         return "/PetClinic/FindOwnersForm";
+    }
+    @RequestMapping(value = "/Find", method = RequestMethod.POST)
+    public String Find(Model model, @RequestParam(value = "lastName") String lastName){
+        if(lastName.equals("")){ // 이름을 입력안하면 모든 사람의 정보가 넘어옴
+            List<Owner> owners = service.getOwners();
+            model.addAttribute("Owners", owners);
+        }else{
+            model.addAttribute("Owners", null);
+        }
+        return "/PetClinic/Find";
     }
 
     /** VeterinariansForm*/

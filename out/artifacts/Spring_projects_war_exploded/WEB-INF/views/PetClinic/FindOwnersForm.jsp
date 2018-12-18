@@ -43,7 +43,7 @@
     <div>
         <p><String>Find Owners</String></p>
         <div>
-            <form:form action="#" method="post" commandName="#">
+            <form:form action="${cp}/PetClinic/FindOwners" method="post" commandName="owner">
                 <form:input path="#"></form:input>
                 <input type="submit" value="Find Owner">
             </form:form>

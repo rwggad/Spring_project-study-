@@ -1,13 +1,14 @@
 package conn.Model.ClinicModel;
 
-import java.util.Set;
+import conn.Model.ClinicModel.Base.Person;
 
-/** 방문자 정보.. (동물 주인 정보)*/
-public class Owner {
-    private int Id;
-    private String address; // 주소
-    private String city; // 사는 도시
-    private String telephone; // 연락처
+import java.util.List;
+
+public class Owner extends Person{
+    private String address;
+    private String city;
+    private String phoneNUmber;
+    private List<Pet> pets;
 
     public String getAddress() {
         return address;
@@ -25,11 +26,19 @@ public class Owner {
         this.city = city;
     }
 
-    public String getTelephone() {
-        return telephone;
+    public String getPhoneNUmber() {
+        return phoneNUmber;
     }
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
+    public void setPhoneNUmber(String phoneNUmber) {
+        this.phoneNUmber = phoneNUmber;
+    }
+
+    public List<Pet> getPets() {
+        return pets;
+    }
+
+    public void setPets(List<Pet> pets) {
+        this.pets = pets;
     }
 }

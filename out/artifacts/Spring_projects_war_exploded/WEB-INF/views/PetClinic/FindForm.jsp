@@ -47,16 +47,32 @@
         </p>
         <div>
             <form:form action="${cp}/PetClinic/Find" method="post" commandName="owner">
-                <p>
-                    <form:input path="lastName" cssStyle="width: 100%; margin-left: 150px; padding-left: 10px"
-                                placeholder="last Name"/>
-                </p>
-                <p style="margin-left: 150px">
-                    <input class="btn btn-dark" type="submit" value="Find Owner">
-                </p>
+                <table class="table" style="width: 80%; margin-left: 10%">
+                    <tbody>
+                    <tr>
+                        <td style="width: 15%;">
+                            last Name :
+                        </td>
+                        <td style="width: 85%;">
+                            <form:input path="lastName" cssStyle="width: 100%;"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div style="float: right;">
+                                <input class="btn btn-dark" type="submit" value="Find Owner">
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </form:form>
         </div>
-        <button class="btn btn-dark" value="Add Owner" onclick="location.href='${cp}/PetClinic/NewOwnerForm'">Add Owner</button>
+        <div>
+            <button class="btn btn-dark" value="Add Owner" onclick="location.href='${cp}/PetClinic/AddOwnerForm'">Add
+                Owner
+            </button>
+        </div>
     </div>
 </div>
 </body>

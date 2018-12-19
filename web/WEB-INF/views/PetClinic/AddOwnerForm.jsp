@@ -46,33 +46,54 @@
         <h4>Owner</h4>
         </p>
         <form:form action="${cp}/PetClinic/NewOwner" method="post" commandName="owner">
-            <div class="form-group" style="margin-left: 10%">
-                <form:label path="firstName">First Name </form:label> &nbsp;
-                <form:input path="firstName" cssStyle="width: 80%;"
-                            value="${owner.firstName}"/>
-            </div>
-            <div class="form-group" style="margin-left: 10%">
-                <form:label path="lastName">Last Name </form:label> &nbsp;
-                <form:input path="lastName" cssStyle="width: 80%;"
-                            value="${owner.lastName}"/>
-            </div>
-            <div class="form-group" style="margin-left: 10%">
-                <form:label path="address">Address </form:label> &nbsp;
-                <form:input path="address" cssStyle="width: 80%;"
-                            value="${owner.address}"/>
-            </div>
-            <div class="form-group" style="margin-left: 10%">
-                <form:label path="city">City </form:label> &nbsp;
-                <form:input path="city" cssStyle="width: 80%;"
-                            value="${owner.city}"/>
-            </div>
-            <div class="form-group" style="margin-left: 10%">
-                <form:label path="phoneNUmber">Telephone</form:label> &nbsp;
-                <form:input path="phoneNUmber" cssStyle="width: 80%;"
-                            value="${owner.phoneNUmber}"/>
-            </div>
-
-            <div class="form-group" style="margin-left: 20%">
+            <table class="table" style="margin-left: 10%; width: 80%">
+                <tbody>
+                <tr>
+                    <div class="form-group" style="margin-left: 10%">
+                        <td style="width: 20%;">First Name</td>
+                        <td style="width: 80%;">
+                            <form:input path="firstName" cssStyle="width: 100%;" value="${owner.firstName}"/>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="form-group" style="margin-left: 10%">
+                        <td style="width: 20%;">Last Name</td>
+                        <td style="width: 80%;">
+                            <form:input path="lastName" cssStyle="width: 100%;" value="${owner.lastName}"/>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="form-group" style="margin-left: 10%">
+                        <td style="width: 20%;">Address</td>
+                        <td style="width: 80%;">
+                            <form:input path="address" cssStyle="width: 100%;" value="${owner.address}"/>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="form-group" style="margin-left: 10%">
+                        <td style="width: 20%;">City</td>
+                        <td style="width: 80%;">
+                            <form:input path="city" cssStyle="width: 100%;" value="${owner.city}"/>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="form-group" style="margin-left: 10%">
+                        <td style="width: 20%;">Telephone</td>
+                        <td style="width: 80%;">
+                            <form:input path="phoneNUmber" cssStyle="width: 100%;" value="${owner.phoneNUmber}"/>
+                        </td>
+                    </div>
+                </tr>
+                </tbody>
+            </table>
+            <div class="form-group" style="float: right; margin-right: 10%">
+                <c:if test="${owner.id != 0}">
+                    <form:hidden path="id" value="${owner.id}"/>
+                </c:if>
                 <input class="btn btn-dark" type="submit"
                        value="${owner.id == 0 ? "Add Owner" : "Edit Owner"}">
             </div>

@@ -43,37 +43,59 @@
 <div class="container">
     <div>
         <p>
-        <h4>Find Owners</h4>
+        <h4>Owner</h4>
         </p>
-        <div>
-            <form:form action="${cp}/PetClinic/Find" method="post" commandName="owner">
-                <table class="table" style="width: 80%; margin-left: 10%">
-                    <tbody>
-                    <tr>
-                        <td style="width: 15%;">
-                            last Name :
+        <form:form action="${cp}/PetClinic/AddPet" method="post" commandName="pet">
+            <table class="table" style="margin-left: 10%; width: 80%">
+                <tbody>
+                <!-- Pet의 Owner 정보 -->
+                <tr>
+                    <td style="width: 20%;">Owner</td>
+                    <td style="width: 80%;">
+                        ${owner.firstName} ${owner.lastName}
+                    </td>
+                </tr>
+                <!-- Pet 이름 -->
+                <tr>
+                    <div class="form-group" style="margin-left: 10%">
+                        <td style="width: 20%;">Name</td>
+                        <td style="width: 80%;">
+                            <form:input path="name" cssStyle="width: 100%;"/>
                         </td>
-                        <td style="width: 85%;">
-                            <form:input path="lastName" cssStyle="width: 100%;"/>
+                    </div>
+                </tr>
+                <!-- Pet 이름 -->
+                <tr>
+                    <div class="form-group" style="margin-left: 10%">
+                        <td style="width: 20%;">Birth Date</td>
+                        <td style="width: 80%;">
+                            <form:input path="birthDay" cssStyle="width: 100%;" placeholder="YYYY-MM-DD"/>
                         </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <div style="float: right;">
-                                <input class="btn btn-dark" type="submit" value="Find Owner">
-                            </div>
+                    </div>
+                </tr>
+                <!-- Pet 타입 -->
+                <tr>
+                    <div class="form-group" style="margin-left: 10%">
+                        <td style="width: 20%;">Type</td>
+                        <td style="width: 80%;">
+                            <form:input path="petType" value="${petTypes.get(0)}"/><%--
+                            <form:select path="petType" multiple="false">
+                                <c:forEach items="${petTypes}" var="type">
+                                    <form:option value="${type}" label="${type.name}"/>
+                                </c:forEach>
+                            </form:select>--%>
                         </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </form:form>
-        </div>
-        <div>
-            <button class="btn btn-dark" value="Add Owner" onclick="location.href='${cp}/PetClinic/AddOwnerForm'">Add
-                Owner
-            </button>
-        </div>
+                    </div>
+                </tr>
+                </tbody>
+            </table>
+            <div class="form-group" style="float: right; margin-right: 10%">
+                <input class="btn btn-dark" type="submit" value="Add Pet">
+            </div>
+        </form:form>
     </div>
 </div>
+<br>
+<br>
 </body>
 </html>

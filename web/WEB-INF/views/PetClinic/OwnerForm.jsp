@@ -68,12 +68,22 @@
             </table>
             <br>
             <div>
-                <form:form action="${cp}/PetClinic/EditOwner?id=${owner.id}" method="post" commandName="owner">
-                    <input class="btn btn-dark" type="submit" value="Edit Owner"/>
-                </form:form>
-                <form:form action="#" method="post" commandName="owner">
-                    <input class="btn btn-dark" type="submit" value="Add New pet"/>
-                </form:form>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <form:form action="${cp}/PetClinic/EditOwner?id=${owner.id}" method="post" commandName="owner">
+                                    <input class="btn btn-dark" type="submit" value="Edit Owner"/>
+                                </form:form>
+                            </td>
+                            <td>
+                                <form:form action="${cp}/PetClinic/AddPetForm?id=${owner.id}" method="post" commandName="owner">
+                                    <input class="btn btn-dark" type="submit" value="Add New pet"/>
+                                </form:form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             <br>
             <div>

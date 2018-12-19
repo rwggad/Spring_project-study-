@@ -28,6 +28,23 @@ public class ClinicDao {
     }
 
     /**
+     * DB에 저장된 모든 Pet Type 가져오기
+     */
+    public List<PetType> select_petTypes() {
+        String sql = "SELECT * FROM types";
+        return template.query(sql,
+                new RowMapper<PetType>() {
+                    public PetType mapRow(ResultSet resultSet, int i) throws SQLException {
+                        PetType petType = new PetType();
+                        petType.setId(resultSet.getInt(1));
+                        petType.setName(resultSet.getString(2));
+                        return petType;
+                    }
+                });
+
+    }
+
+    /**
      * pet_id 에 맞는 Pet Type 가져오기
      */
     public PetType select_petType(final int id) {
@@ -173,6 +190,23 @@ public class ClinicDao {
                         preparedStatement.setString(4, owner.getCity());
                         preparedStatement.setString(5, owner.getPhoneNUmber());
                         preparedStatement.setInt(6, owner.getId());
+                    }
+                });
+    }
+
+    /**
+     * Pet 정보 입력*/
+    public int insert_pet(final Pet pet){
+        String sql = "INSERT INTO pets VALUES(?, ?, ?, ?, ?)";
+        return template.update(sql,
+                new PreparedStatementSetter() {
+                    public void setValues(PreparedStatement preparedStatement) throws SQLException {
+                        int idx = template.queryForObject("SELECT MAX(id) FROM pets", Integer.class);
+                        preparedStatement.setInt(1,idx + 1);
+                        preparedStatement.setString(2, pet.getName());
+                        preparedStatement.setString(3, pet.getBirthDay());
+                        preparedStatement.setInt(4, pet.getPetType().getId());
+                        preparedStatement.setInt(5, pet.getOwner().getId());
                     }
                 });
     }

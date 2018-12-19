@@ -1,9 +1,11 @@
 package conn.controller;
 
+import conn.Model.ClinicModel.Base.PetType;
 import conn.Model.ClinicModel.Owner;
+import conn.Model.ClinicModel.Pet;
 import conn.service.ClinicService;
+import oracle.jdbc.proxy.annotation.Post;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -12,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -65,7 +66,6 @@ public class ClinicController {
         return "PetClinic/FindResultForm";
     }
 
-
     /** Owner From*/
     @RequestMapping("/OwnerForm")
     public String OwnerForm(Model model, @RequestParam(value = "id") int id){
@@ -75,12 +75,12 @@ public class ClinicController {
     }
 
     /** Add New Owner*/
-    @RequestMapping("/NewOwnerForm")
+    @RequestMapping("/AddOwnerForm")
     public String NewOwnerForm(Owner owner){
-        return "PetClinic/NewOwnerForm";
+        return "PetClinic/AddOwnerForm";
     }
-    @RequestMapping(value = "/NewOwner", method = RequestMethod.POST)
-    public String NewOwner(Model model, Owner owner){
+    @RequestMapping(value = "/AddOwner", method = RequestMethod.POST)
+    public String AddOwner(Model model, Owner owner){
         if(owner.getId() == 0){ // 값으로 넘어온 owner의 id가 0 이면 새로운 owner
             service.putOwner(owner);
         }else{ // 아니라면 update (기존에 있던 owner)
@@ -90,11 +90,28 @@ public class ClinicController {
         return "PetClinic/OwnerForm";
     }
 
+    /** Add New Pet*/
+    @RequestMapping("/AddPetForm")
+    public String AddPetForm(Model model, Pet pet, @RequestParam(value = "id") int id){
+        Owner owner = service.getOwner(id);
+        List<PetType> petTypes = service.getPetTypes();
+        model.addAttribute("owner", owner);
+        model.addAttribute("petTypes", petTypes);
+        return "PetClinic/AddPetForm";
+    }
+    @RequestMapping(value = "/AddPet", method = RequestMethod.POST)
+    public String AddPet(Pet pet){
+        //service.putPet(pet);
+        return "/PetClinic/HomeForm";
+        //return "redirect:/PetClinic/OwnerForm?id=" + pet.getOwner().getId();
+    }
+
     /** Edit Owner*/
     @RequestMapping("/EditOwner")
     public String EditOwner(Model model, @RequestParam(value = "id") int id){
         Owner owner = service.getOwner(id);
         model.addAttribute("owner", owner);
-        return "PetClinic/NewOwnerForm";
+        return "PetClinic/AddOwnerForm";
     }
+
 }

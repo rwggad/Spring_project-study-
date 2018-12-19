@@ -48,27 +48,33 @@
         <form:form action="${cp}/PetClinic/NewOwner" method="post" commandName="owner">
             <div class="form-group" style="margin-left: 10%">
                 <form:label path="firstName">First Name </form:label> &nbsp;
-                <form:input path="firstName" cssStyle="width: 80%;"/>
+                <form:input path="firstName" cssStyle="width: 80%;"
+                            value="${owner.firstName}"/>
             </div>
             <div class="form-group" style="margin-left: 10%">
                 <form:label path="lastName">Last Name </form:label> &nbsp;
-                <form:input path="lastName" cssStyle="width: 80%;"/>
+                <form:input path="lastName" cssStyle="width: 80%;"
+                            value="${owner.lastName}"/>
             </div>
             <div class="form-group" style="margin-left: 10%">
                 <form:label path="address">Address </form:label> &nbsp;
-                <form:input path="address" cssStyle="width: 80%;"/>
+                <form:input path="address" cssStyle="width: 80%;"
+                            value="${owner.address}"/>
             </div>
             <div class="form-group" style="margin-left: 10%">
                 <form:label path="city">City </form:label> &nbsp;
-                <form:input path="city" cssStyle="width: 80%;"/>
+                <form:input path="city" cssStyle="width: 80%;"
+                            value="${owner.city}"/>
             </div>
             <div class="form-group" style="margin-left: 10%">
                 <form:label path="phoneNUmber">Telephone</form:label> &nbsp;
-                <form:input path="phoneNUmber" cssStyle="width: 80%;"/>
+                <form:input path="phoneNUmber" cssStyle="width: 80%;"
+                            value="${owner.phoneNUmber}"/>
             </div>
 
             <div class="form-group" style="margin-left: 20%">
-                <input class="btn btn-dark" type="submit" value="Add Owner">
+                <input class="btn btn-dark" type="submit"
+                       value="${owner.id == 0 ? "Add Owner" : "Edit Owner"}">
             </div>
         </form:form>
     </div>

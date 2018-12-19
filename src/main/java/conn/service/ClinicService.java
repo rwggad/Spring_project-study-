@@ -29,4 +29,14 @@ public class ClinicService {
         return owner;
     }
 
+    /** Owner 정보 입력하기 */
+    public int putOwner(Owner owner){
+        return this.dao.insert_owner(owner);
+    }
+
+    /** Owner 정보 수정하기*/
+    public int modifyOwner(Owner owner){
+        return this.dao.modify_owner(owner);
+    }
+
 }

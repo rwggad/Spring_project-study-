@@ -50,32 +50,36 @@
                 <tbody>
                 <tr>
                     <td>Name</td>
-                    <td>${Owner.firstName} ${Owner.lastName}</td>
+                    <td>${owner.firstName} ${owner.lastName}</td>
                 </tr>
                 <tr>
                     <td>Address</td>
-                    <td>${Owner.address}</td>
+                    <td>${owner.address}</td>
                 </tr>
                 <tr>
                     <td>City</td>
-                    <td>${Owner.city}</td>
+                    <td>${owner.city}</td>
                 </tr>
                 <tr>
                     <td>Telephone</td>
-                    <td>${Owner.phoneNUmber}</td>
+                    <td>${owner.phoneNUmber}</td>
                 </tr>
                 </tbody>
             </table>
             <br>
             <div>
-                <a class="btn btn-dark" href="#">Edit Owner</a>
-                <a class="btn btn-dark" href="#">Add New pet</a>
+                <form:form action="${cp}/PetClinic/EditOwner?id=${owner.id}" method="post" commandName="owner">
+                    <input class="btn btn-dark" type="submit" value="Edit Owner"/>
+                </form:form>
+                <form:form action="#" method="post" commandName="owner">
+                    <input class="btn btn-dark" type="submit" value="Add New pet"/>
+                </form:form>
             </div>
             <br>
             <div>
                 <table class="table">
                     <tbody>
-                    <c:forEach items="${Owner.pets}" var="pet">
+                    <c:forEach items="${owner.pets}" var="pet">
                     <tr>
                         <td valign="top">
                             <dl>

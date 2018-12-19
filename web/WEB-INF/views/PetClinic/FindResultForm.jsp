@@ -58,13 +58,13 @@
                 </thead>
                 <tbody>
                 <c:choose>
-                    <c:when test="${empty Owners}">
+                    <c:when test="${empty owners}">
                         <tr>
                             <td colspan="5">Empty Owners..</td>
                         </tr>
                     </c:when>
                     <c:otherwise>
-                        <c:forEach items="${Owners}" var="owner">
+                        <c:forEach items="${owners}" var="owner">
                             <tr>
                                 <td>
                                     <a href="${cp}/PetClinic/OwnerForm?id=${owner.id}">${owner.firstName} ${owner.lastName}</a>

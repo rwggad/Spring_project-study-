@@ -46,9 +46,9 @@ public class ClinicDao {
                         return type;
                     }
                 });
-        if(pet.isEmpty()){ // pet 정보가 없다면..
+        if (pet.isEmpty()) { // pet 정보가 없다면..
             return null;
-        }else{ // pet 정보가 있다면 전달.
+        } else { // pet 정보가 있다면 전달.
             return pet.get(0);
         }
     }
@@ -58,7 +58,7 @@ public class ClinicDao {
      */
     public List<Pet> select_pets(final Owner owner) {
         List<Pet> petList = null;
-        String sql = "SELECT * FROM pets WHERE id = ?";
+        String sql = "SELECT * FROM pets WHERE owner_id = ?";
         petList = template.query(sql,
                 new PreparedStatementSetter() {
                     public void setValues(PreparedStatement preparedStatement) throws SQLException {
@@ -76,9 +76,9 @@ public class ClinicDao {
                         return pet;
                     }
                 });
-        if(petList.isEmpty()){ // 현재 방문자가 소유한 동물이 없다면...
+        if (petList.isEmpty()) { // 현재 방문자가 소유한 동물이 없다면...
             return null;
-        }else{ // 현재 방문자가 소유한 동물이 있을 경우...
+        } else { // 현재 방문자가 소유한 동물이 있을 경우...
             return petList;
         }
     }
@@ -106,9 +106,11 @@ public class ClinicDao {
                 });
         return ownerList;
     }
+
     /**
-     * 특정 Owner 정보 들고오기 */
-    public Owner select_owner(final int id){
+     * 특정 Owner 정보 들고오기
+     */
+    public Owner select_owner(final int id) {
         List<Owner> owners = null;
         String sql = "SELECT * FROM owners WHERE id = ?";
         owners = template.query(sql,
@@ -131,12 +133,47 @@ public class ClinicDao {
                         return owner;
                     }
                 });
-        if(owners.isEmpty()){
+        if (owners.isEmpty()) {
             return null;
-        }else{
+        } else {
             return owners.get(0);
         }
     }
+
     /**
-     * Owner 정보 DB에 입력 */
+     * Owner 정보 DB에 입력
+     */
+    public int insert_owner(final Owner owner) {
+        String sql = "INSERT INTO owners VALUES(?, ?, ?, ?, ?, ?)";
+        return template.update(sql,
+                new PreparedStatementSetter() {
+                    public void setValues(PreparedStatement preparedStatement) throws SQLException {
+                        int idx = template.queryForObject("SELECT MAX(id) FROM owners", Integer.class);
+                        preparedStatement.setInt(1, idx + 1);
+                        preparedStatement.setString(2, owner.getFirstName());
+                        preparedStatement.setString(3, owner.getLastName());
+                        preparedStatement.setString(4, owner.getAddress());
+                        preparedStatement.setString(5, owner.getCity());
+                        preparedStatement.setString(6, owner.getPhoneNUmber());
+                    }
+                });
+    }
+
+    /**
+     * Owner 정보 수정
+     */
+    public int modify_owner(final Owner owner) {
+        String sql = "UPDATE owners SET first_name = ?, last_name = ?, address = ?, city = ?, telephone = ? WHERE id = ?";
+        return template.update(sql,
+                new PreparedStatementSetter() {
+                    public void setValues(PreparedStatement preparedStatement) throws SQLException {
+                        preparedStatement.setString(1, owner.getFirstName());
+                        preparedStatement.setString(2, owner.getLastName());
+                        preparedStatement.setString(3, owner.getAddress());
+                        preparedStatement.setString(4, owner.getCity());
+                        preparedStatement.setString(5, owner.getPhoneNUmber());
+                        preparedStatement.setInt(6, owner.getId());
+                    }
+                });
+    }
 }

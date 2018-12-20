@@ -34,7 +34,6 @@ public class ClinicService {
         Owner owner = this.dao.select_owner(id);
         return owner;
     }
-
     /**
      * Owner 정보 입력하기
      */
@@ -50,12 +49,17 @@ public class ClinicService {
     }
 
     /**
-     * Pet Type 정보 가져오기
+     * Pet Type 모든 가져오기
      */
     public List<PetType> getPetTypes() {
         return this.dao.select_petTypes();
     }
 
+    /**
+     * Pet Type 특정 정보 가져오기*/
+    public PetType getPetType(int id){
+        return this.dao.select_petType(id);
+    }
     /**
      * Pet 정보 입력
      */

@@ -4,14 +4,10 @@ import conn.Model.ClinicModel.Base.PetType;
 import conn.Model.ClinicModel.Owner;
 import conn.Model.ClinicModel.Pet;
 import conn.service.ClinicService;
-import oracle.jdbc.proxy.annotation.Post;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.text.DateFormat;
@@ -46,11 +42,11 @@ public class ClinicController {
 
     /** FindForm*/
     @RequestMapping("/FindForm")
-    public String FindOwnersForm(Owner owner){
+    public String FindOwnersForm(@ModelAttribute("owner") Owner owner){
         return "PetClinic/FindForm";
     }
     @RequestMapping(value = "/Find", method = RequestMethod.POST)
-    public String Find(Model model, Owner owner){
+    public String Find(Model model, @ModelAttribute("owner") Owner owner){
         List<Owner> owners_ALL = service.getOwners(); // 전체 목록을 받아옴
         if(owner.getLastName().equals("")){ // 이름을 입력안하면 모든 사람의 정보가 넘어옴
             model.addAttribute("owners", owners_ALL);
@@ -76,11 +72,11 @@ public class ClinicController {
 
     /** Add New Owner*/
     @RequestMapping("/AddOwnerForm")
-    public String NewOwnerForm(Owner owner){
+    public String NewOwnerForm(@ModelAttribute("owner") Owner owner){
         return "PetClinic/AddOwnerForm";
     }
     @RequestMapping(value = "/AddOwner", method = RequestMethod.POST)
-    public String AddOwner(Model model, Owner owner){
+    public String AddOwner(Model model, @ModelAttribute("owner") Owner owner){
         if(owner.getId() == 0){ // 값으로 넘어온 owner의 id가 0 이면 새로운 owner
             service.putOwner(owner);
         }else{ // 아니라면 update (기존에 있던 owner)
@@ -92,7 +88,7 @@ public class ClinicController {
 
     /** Add New Pet*/
     @RequestMapping("/AddPetForm")
-    public String AddPetForm(Model model, Pet pet, @RequestParam(value = "id") int id){
+    public String AddPetForm(Model model, @RequestParam(value = "id") int id, @ModelAttribute("pet") Pet pet){
         Owner owner = service.getOwner(id);
         List<PetType> petTypes = service.getPetTypes();
         model.addAttribute("owner", owner);
@@ -100,10 +96,11 @@ public class ClinicController {
         return "PetClinic/AddPetForm";
     }
     @RequestMapping(value = "/AddPet", method = RequestMethod.POST)
-    public String AddPet(Pet pet){
-        //service.putPet(pet);
-        return "/PetClinic/HomeForm";
-        //return "redirect:/PetClinic/OwnerForm?id=" + pet.getOwner().getId();
+    public String AddPet(@ModelAttribute("pet") Pet pet, HttpServletRequest request){
+        pet.setOwner(service.getOwner(Integer.parseInt(request.getParameter("owner_id"))));
+        pet.setPetType(service.getPetType(Integer.parseInt(request.getParameter("types"))));
+        service.putPet(pet);
+        return "redirect:/PetClinic/OwnerForm?id=" + pet.getOwner().getId();
     }
 
     /** Edit Owner*/

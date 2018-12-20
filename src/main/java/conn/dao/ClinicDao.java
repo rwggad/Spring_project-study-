@@ -45,7 +45,7 @@ public class ClinicDao {
     }
 
     /**
-     * pet_id 에 맞는 Pet Type 가져오기
+     * Type_id 에 맞는 Pet Type 가져오기
      */
     public PetType select_petType(final int id) {
         List<PetType> pet = null;
@@ -88,7 +88,7 @@ public class ClinicDao {
                         pet.setId(resultSet.getInt(1));
                         pet.setName(resultSet.getString(2));
                         pet.setBirthDay(resultSet.getString(3));
-                        pet.setPetType(select_petType(resultSet.getInt(1)));
+                        pet.setPetType(select_petType(resultSet.getInt(4)));
                         pet.setOwner(owner);
                         return pet;
                     }

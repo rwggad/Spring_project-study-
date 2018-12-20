@@ -45,7 +45,7 @@
         <p>
         <h4>Owner</h4>
         </p>
-        <form:form action="${cp}/PetClinic/NewOwner" method="post" commandName="owner">
+        <form:form action="${cp}/PetClinic/AddOwner" method="post" commandName="owner">
             <table class="table" style="margin-left: 10%; width: 80%">
                 <tbody>
                 <tr>

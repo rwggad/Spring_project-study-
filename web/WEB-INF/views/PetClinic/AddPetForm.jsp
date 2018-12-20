@@ -45,7 +45,7 @@
         <p>
         <h4>Owner</h4>
         </p>
-        <form:form action="${cp}/PetClinic/AddPet" method="post" commandName="pet">
+        <form:form action="${cp}/PetClinic/AddPet?owner_id=${owner.id}" method="post" commandName="pet">
             <table class="table" style="margin-left: 10%; width: 80%">
                 <tbody>
                 <!-- Pet의 Owner 정보 -->
@@ -78,11 +78,16 @@
                     <div class="form-group" style="margin-left: 10%">
                         <td style="width: 20%;">Type</td>
                         <td style="width: 80%;">
-                            <form:select path="petType" multiple="false">
+                            <select name="types" multiple="false">
+                                <c:forEach items="${petTypes}" var="type">
+                                    <option value="${type.id}">${type.name}</option>
+                                </c:forEach>
+                            </select>
+                            <%--<form:select path="petType" multiple="false">
                                 <c:forEach items="${petTypes}" var="type">
                                     <form:option value="${type}" label="${type.name}"/>
                                 </c:forEach>
-                            </form:select>
+                            </form:select>--%>
                         </td>
                     </div>
                 </tr>

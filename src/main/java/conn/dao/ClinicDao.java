@@ -28,8 +28,9 @@ public class ClinicDao {
     }
 
     /**
-     * DB에 저장된 모든 Pet Type 가져오기
+     * Select
      */
+    // DB에 저장된 모든 Pet Type 가져오기
     public List<PetType> select_petTypes() {
         String sql = "SELECT * FROM types";
         return template.query(sql,
@@ -44,9 +45,7 @@ public class ClinicDao {
 
     }
 
-    /**
-     * Type_id 에 맞는 Pet Type 가져오기
-     */
+    // Type_id 에 맞는 Pet Type 가져오기
     public PetType select_petType(final int id) {
         List<PetType> pet = null;
         String sql = "SELECT * FROM types WHERE id = ?";
@@ -70,9 +69,7 @@ public class ClinicDao {
         }
     }
 
-    /**
-     * owner_id 맞는 Pet 정보 가져오기
-     */
+    // owner_id 맞는 Pet 정보 가져오기
     public List<Pet> select_pets(final Owner owner) {
         List<Pet> petList = null;
         String sql = "SELECT * FROM pets WHERE owner_id = ?";
@@ -100,34 +97,8 @@ public class ClinicDao {
         }
     }
 
-    /**
-     * 전체 Owner 정보 들고오기
-     */
-    public List<Owner> select_owners() {
-        //id, 첫번째 이름, 두번째 이름, 주소, 도시, 핸드폰 번호)
-        String sql = "SELECT * FROM owners";
-        List<Owner> ownerList = template.query(sql,
-                new RowMapper<Owner>() {
-                    public Owner mapRow(ResultSet resultSet, int i) throws SQLException {
-                        Owner owner = new Owner();
-                        owner.setId(resultSet.getInt(1));
-                        owner.setFirstName(resultSet.getString(2));
-                        owner.setLastName(resultSet.getString(3));
-                        owner.setAddress(resultSet.getString(4));
-                        owner.setCity(resultSet.getString(5));
-                        owner.setPhoneNUmber(resultSet.getString(6));
-                        List<Pet> OwnerPetLst = select_pets(owner);
-                        owner.setPets(OwnerPetLst);
-                        return owner;
-                    }
-                });
-        return ownerList;
-    }
-
-    /**
-     * 특정 Owner 정보 들고오기
-     */
-    public Owner select_owner(final int id) {
+    // 특정 Owner 정보 들고오기 (id)
+    public Owner select_ownerById(final int id) {
         List<Owner> owners = null;
         String sql = "SELECT * FROM owners WHERE id = ?";
         owners = template.query(sql,
@@ -157,15 +128,58 @@ public class ClinicDao {
         }
     }
 
-    /**
-     * Owner 정보 DB에 입력
-     */
-    public int insert_owner(final Owner owner) {
-        String sql = "INSERT INTO owners VALUES(?, ?, ?, ?, ?, ?)";
-        return template.update(sql,
+    // 특정 Owner 정보 들고오기 (LastName)
+    public List<Owner> select_ownersByName(final String LastName) {
+        String sql = null;
+        List<Owner> selections = null;
+        if (LastName.equals("")) {
+            sql = "SELECT * FROM owners";
+        } else {
+            sql = "SELECT * FROM owners WHERE last_name = ?";
+        }
+        selections = template.query(sql,
                 new PreparedStatementSetter() {
                     public void setValues(PreparedStatement preparedStatement) throws SQLException {
-                        int idx = template.queryForObject("SELECT MAX(id) FROM owners", Integer.class);
+                        if (!LastName.equals("")) {
+                            preparedStatement.setString(1, LastName);
+                        }
+                    }
+                },
+                new RowMapper<Owner>() {
+                    public Owner mapRow(ResultSet resultSet, int i) throws SQLException {
+                        Owner owner = new Owner();
+                        owner.setId(resultSet.getInt(1));
+                        owner.setFirstName(resultSet.getString(2));
+                        owner.setLastName(resultSet.getString(3));
+                        owner.setAddress(resultSet.getString(4));
+                        owner.setCity(resultSet.getString(5));
+                        owner.setPhoneNUmber(resultSet.getString(6));
+                        List<Pet> OwnerPetLst = select_pets(owner);
+                        owner.setPets(OwnerPetLst);
+                        return owner;
+                    }
+                });
+
+
+        if (selections == null) {
+            return null;
+        } else {
+            return selections;
+        }
+    }
+
+
+    /**
+     * Insert
+     */
+
+    // Owner 정보 DB에 입력
+    public int insert_owner(final Owner owner) {
+        String sql = "INSERT INTO owners VALUES(?, ?, ?, ?, ?, ?)";
+        final int idx = template.queryForObject("SELECT MAX(id) FROM owners", Integer.class);
+        template.update(sql,
+                new PreparedStatementSetter() {
+                    public void setValues(PreparedStatement preparedStatement) throws SQLException {
                         preparedStatement.setInt(1, idx + 1);
                         preparedStatement.setString(2, owner.getFirstName());
                         preparedStatement.setString(3, owner.getLastName());
@@ -174,11 +188,29 @@ public class ClinicDao {
                         preparedStatement.setString(6, owner.getPhoneNUmber());
                     }
                 });
+        return idx;
+    }
+
+    // Pet 정보 DB에 입력
+    public int insert_pet(final Pet pet) {
+        String sql = "INSERT INTO pets VALUES(?, ?, ?, ?, ?)";
+        return template.update(sql,
+                new PreparedStatementSetter() {
+                    public void setValues(PreparedStatement preparedStatement) throws SQLException {
+                        int idx = template.queryForObject("SELECT MAX(id) FROM pets", Integer.class);
+                        preparedStatement.setInt(1, idx + 1);
+                        preparedStatement.setString(2, pet.getName());
+                        preparedStatement.setString(3, pet.getBirthDay());
+                        preparedStatement.setInt(4, pet.getPetType().getId());
+                        preparedStatement.setInt(5, pet.getOwner().getId());
+                    }
+                });
     }
 
     /**
-     * Owner 정보 수정
+     * Update
      */
+    // Owner 정보 수정
     public int modify_owner(final Owner owner) {
         String sql = "UPDATE owners SET first_name = ?, last_name = ?, address = ?, city = ?, telephone = ? WHERE id = ?";
         return template.update(sql,
@@ -194,20 +226,4 @@ public class ClinicDao {
                 });
     }
 
-    /**
-     * Pet 정보 입력*/
-    public int insert_pet(final Pet pet){
-        String sql = "INSERT INTO pets VALUES(?, ?, ?, ?, ?)";
-        return template.update(sql,
-                new PreparedStatementSetter() {
-                    public void setValues(PreparedStatement preparedStatement) throws SQLException {
-                        int idx = template.queryForObject("SELECT MAX(id) FROM pets", Integer.class);
-                        preparedStatement.setInt(1,idx + 1);
-                        preparedStatement.setString(2, pet.getName());
-                        preparedStatement.setString(3, pet.getBirthDay());
-                        preparedStatement.setInt(4, pet.getPetType().getId());
-                        preparedStatement.setInt(5, pet.getOwner().getId());
-                    }
-                });
-    }
 }

@@ -72,7 +72,7 @@
                     <tbody>
                         <tr>
                             <td>
-                                <form:form action="${cp}/PetClinic/EditOwner?id=${owner.id}" method="post" commandName="owner">
+                                <form:form action="${cp}/PetClinic/EditOwner/${owner.id}" method="post" commandName="owner">
                                     <input class="btn btn-dark" type="submit" value="Edit Owner"/>
                                 </form:form>
                             </td>

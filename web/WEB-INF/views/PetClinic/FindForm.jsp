@@ -69,8 +69,7 @@
             </form:form>
         </div>
         <div>
-            <button class="btn btn-dark" value="Add Owner" onclick="location.href='${cp}/PetClinic/AddOwnerForm'">Add
-                Owner
+            <button class="btn btn-dark" value="Add Owner" onclick="location.href='${cp}/PetClinic/AddOrModifyOwnerForm'">Add Owner
             </button>
         </div>
     </div>

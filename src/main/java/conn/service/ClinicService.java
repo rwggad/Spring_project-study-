@@ -16,23 +16,16 @@ public class ClinicService {
     ClinicDao dao;
 
     /**
-     * Owner 모든 정보 가져오기
-     */
-    public List<Owner> getOwners() {
-        List<Owner> ownerList = this.dao.select_owners();
-        if (ownerList.isEmpty()) { // 현재 사이트에 방문자 정보가 없다면
-            return null;
-        } else {
-            return ownerList;
-        }
+     * 특정 Owner 정보 가져오기 (By Last Name)
+     * */
+    public List<Owner> getOwnersByName(String LastName){
+        return this.dao.select_ownersByName(LastName);
     }
-
     /**
-     * 특정 Owner 정보 가져오기
+     * 특정 Owner 정보 가져오기 (By id)
      */
-    public Owner getOwner(int id) {
-        Owner owner = this.dao.select_owner(id);
-        return owner;
+    public Owner getOwnerById(int id) {
+        return this.dao.select_ownerById(id);
     }
     /**
      * Owner 정보 입력하기

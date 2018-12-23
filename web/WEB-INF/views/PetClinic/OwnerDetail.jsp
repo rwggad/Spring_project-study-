@@ -77,7 +77,7 @@
                                 </form:form>
                             </td>
                             <td>
-                                <form:form action="${cp}/PetClinic/AddPetForm?id=${owner.id}" method="post" commandName="owner">
+                                <form:form action="${cp}/PetClinic/AddPetForm/${owner.id}" method="post" commandName="owner">
                                     <input class="btn btn-dark" type="submit" value="Add New pet"/>
                                 </form:form>
                             </td>

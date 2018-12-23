@@ -94,20 +94,21 @@ public class ClinicController {
     }
 
     /** Add New Pet*/
-    @RequestMapping("/AddPetForm")
-    public String AddPetForm(Model model, @RequestParam(value = "id") int id, @ModelAttribute("pet") Pet pet){
-        Owner owner = service.getOwnerById(id);
+    @RequestMapping("/AddPetForm/{owner_id}")
+    public String AddPetForm(Model model, Pet pet, @PathVariable("owner_id") int owner_id){
+        Owner owner = service.getOwnerById(owner_id);
         List<PetType> petTypes = service.getPetTypes();
         model.addAttribute("owner", owner);
         model.addAttribute("petTypes", petTypes);
         return "PetClinic/AddPetForm";
     }
-    @RequestMapping(value = "/AddPet", method = RequestMethod.POST)
-    public String AddPet(@ModelAttribute("pet") Pet pet, HttpServletRequest request){
-        pet.setOwner(service.getOwnerById(Integer.parseInt(request.getParameter("owner_id"))));
+    @RequestMapping(value = "/AddPet/{owner_id}", method = RequestMethod.POST)
+    public String AddPet(@PathVariable("owner_id") int owner_id,
+                         @ModelAttribute("pet") Pet pet, HttpServletRequest request){
+        pet.setOwner(service.getOwnerById(owner_id));
         pet.setPetType(service.getPetType(Integer.parseInt(request.getParameter("types"))));
         service.putPet(pet);
-        return "redirect:/PetClinic/OwnerForm?id=" + pet.getOwner().getId();
+        return "redirect:/PetClinic/OwnerDetail/" + owner_id;
     }
 
     /** Edit Owner*/

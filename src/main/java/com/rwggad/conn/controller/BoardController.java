@@ -39,9 +39,14 @@ public class BoardController {
     @RequestMapping("/HomeForm")
     public ModelAndView HomeForm(Map<String, Object> commandMap){
         ModelAndView mv = new ModelAndView("/BoardSystem/HomeForm");
-        List<Map<String, Object>> list = service.selectBoardList(commandMap);
+        List<Map<String, Object>> list = this.service.selectBoardList(commandMap);
         mv.addObject("list",list);
         return mv;
     }
 
+    /** Insert */
+    @RequestMapping("/InsertForm")
+    public String InsertForm(Board board){
+        return "BoardSystem/InsertForm";
+    }
 }

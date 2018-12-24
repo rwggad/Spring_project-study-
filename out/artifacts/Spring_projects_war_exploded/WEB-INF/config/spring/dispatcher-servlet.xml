@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+
+    <!-- 서블릿 설정 -->
+    <mvc:annotation-driven></mvc:annotation-driven> <!-- Annotation 활성화  -->
+    <context:component-scan base-package="com.rwggad.conn"></context:component-scan> <!-- Component 패키지 지정 -->
+
+    <!--
+      웹 context설정에서
+      <mvc:resources mapping="/resources/**" location="/resources/" />가 기본적으로 설정이 되어 있는데, webroot아래의 /resource 폴더에다가 넣으라는 의미이다. mapping은 프로그램상의 접근 위치이고, location이 실제 파일시스템 상 경로이다.
+      즉 웹루트에다가  /images를 적용하고 싶으면 mapping="/image/**" location="/images/" 이런 식으로 바꾸면 된다.
+    -->
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+    <!--
+    MVC 작동 방식 2
+
+    요청 -> servlet -> Mapping -> Adapter -> 해당 요청의 Controller method 를 거쳐서 Model/View 형식으로 ViewResolver 온다.
+
+    밑은 ViewResolver 정의 인데
+
+    controller method 에서 return 값으로 넘긴 string 문자열이 있다. (VIEW)
+
+    그러면 prefix + string + suffix 에 해당하는 파일을 실행시킨다.
+    ex)
+     controller 에서 return 값이 index 였음.
+     /WEB-INF/views/index.jsp 로 간다는 뜻.
+
+    -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!--
+     interceptor 가 적용되는 범위를 지정 (Mapping)
+     내가 설정한 요청이 되면 내가 만든 interceptor 가 작동하도록 명시한다.
+    -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/LoginSystem/ModifyForm"/>
+            <mvc:mapping path="/LoginSystem/RemoveForm"/>
+            <mvc:mapping path="/SearchSystem/**"/>
+            <bean class="com.rwggad.conn.Interceptor.MemberLoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>

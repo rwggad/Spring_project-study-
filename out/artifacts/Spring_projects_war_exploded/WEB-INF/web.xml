@@ -4,10 +4,11 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+
     <!-- 스프링 설정파일 등록 -->
     <context-param> <!-- context-param 은 모든곳 에서 첨고할 수 있다.-->
         <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/spring/applicationContext.xml</param-value>
+        <param-value>classpath*:/config/spring/context-*.xml</param-value>
     </context-param>
 
     <listener>
@@ -27,7 +28,7 @@
         -->
         <init-param> <!-- init-param은 해당 서블릿에서만 사용가능 ( dispatcher ) -->
             <param-name>contextConfigLocation</param-name>
-            <param-value>/WEB-INF/spring/appServlet/dispatcher-servlet.xml</param-value>
+            <param-value>/WEB-INF/config/spring/*-servlet.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -38,10 +39,6 @@
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name> <!-- 서블릿 명칭 -->
         <url-pattern>/</url-pattern> <!-- spring에서 첫 관분은 dispatcher 이기때문에 루트에서 받도록 설정해준다.-->
-        <url-pattern>*.js</url-pattern>
-        <url-pattern>*.css</url-pattern>
-        <url-pattern>*.gif</url-pattern>
-        <url-pattern>*.jpg</url-pattern>
     </servlet-mapping>
 
     <!-- utf-8 설정 -->

@@ -39,13 +39,13 @@
     <hr>
     <div class="container">
         <c:choose>
-            <c:when test="${empty boardList}">
+            <c:when test="${empty list}">
                 <div>
                     작성된 게시물이 존재 하지 않습니다.
                 </div>
             </c:when>
             <c:otherwise>
-                <c:forEach items="${boardList}" var="board">
+                <c:forEach items="${list}" var="board">
                     <div class="jumbotron">
                         <div>제목 : ${board.boardTitle}</div> <br>
                         <div>작성자 :${board.boardWriter}</div> <br>

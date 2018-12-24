@@ -7,150 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbb2859b-a793-4b90-9233-481ff86af636" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/dao/AbstractDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config/spring/context-mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/sample/sample.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Spring_projects_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Spring_projects_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Interceptor/MemberLoginInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Model/BaordModel/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Model/ClinicModel/Base/Id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Model/ClinicModel/Base/Name.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Model/ClinicModel/Base/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Model/ClinicModel/Base/PetType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Model/ClinicModel/Owner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Model/ClinicModel/Pet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Model/ClinicModel/Visits.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Model/LoginModel/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/Model/WordModel/WordSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/BoardController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/ClinicController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/MemberController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/controller/WordController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/BoardDao$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/BoardDao$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/BoardDao$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/BoardDao$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/BoardDao$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/BoardDao$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/BoardDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/ClinicDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/MemberDao$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/MemberDao$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/MemberDao$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/MemberDao$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/MemberDao$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/MemberDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/WordDao$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/WordDao$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/WordDao$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/WordDao$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/WordDao$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/WordDao$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/dao/WordDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/service/BoardService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/service/ClinicService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/service/MemberService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/conn/service/WordService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/spring/appServlet/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/spring/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/com/rwggad/conn/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/classes/com/rwggad/conn/controller/BoardController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/BoardSystem/HomeForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/views/BoardSystem/HomeForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Spring_projects_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/Interceptor/MemberLoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/Interceptor/MemberLoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/Model/BaordModel/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/Model/BaordModel/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/Model/ClinicModel/Base/Id.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/Model/ClinicModel/Base/Id.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/Model/ClinicModel/Base/Name.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/Model/ClinicModel/Base/Name.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/Model/ClinicModel/Base/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/Model/ClinicModel/Base/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/Model/ClinicModel/Base/PetType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/Model/ClinicModel/Base/PetType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/Model/ClinicModel/Owner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/Model/ClinicModel/Owner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/Model/ClinicModel/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/Model/ClinicModel/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/Model/ClinicModel/Visits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/Model/ClinicModel/Visits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/Model/LoginModel/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/Model/LoginModel/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/Model/WordModel/WordSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/Model/WordModel/WordSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/controller/ClinicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/ClinicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/controller/WordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/WordController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/dao/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/dao/BoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/dao/ClinicDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/dao/ClinicDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/dao/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/dao/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/dao/WordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/dao/WordDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/service/ClinicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/service/ClinicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/conn/service/WordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/service/WordService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Interceptor/MemberLoginInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Model/BaordModel/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Model/ClinicModel/Base/Id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Model/ClinicModel/Base/Name.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Model/ClinicModel/Base/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Model/ClinicModel/Base/PetType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Model/ClinicModel/Owner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Model/ClinicModel/Pet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Model/ClinicModel/Visits.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Model/LoginModel/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/Model/WordModel/WordSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/controller/BoardController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/controller/ClinicController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/controller/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/controller/MemberController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/controller/WordController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/BoardDao$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/BoardDao$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/BoardDao$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/BoardDao$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/BoardDao$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/BoardDao$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/BoardDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/ClinicDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/MemberDao$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/MemberDao$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/MemberDao$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/MemberDao$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/MemberDao$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/MemberDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/WordDao$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/WordDao$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/WordDao$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/WordDao$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/WordDao$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/WordDao$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/dao/WordDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/service/BoardService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/service/ClinicService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/service/MemberService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/conn/service/WordService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/spring/appServlet/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/config/spring/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/spring/context-dataSource.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rwggad/conn/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rwggad/conn/controller/BoardController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -207,7 +69,7 @@
           <entry key="css" value="8" />
           <entry key="html" value="48" />
           <entry key="iml" value="6" />
-          <entry key="java" value="436" />
+          <entry key="java" value="437" />
           <entry key="js" value="1" />
           <entry key="jsp" value="304" />
           <entry key="tld" value="1" />
@@ -220,7 +82,7 @@
           <entry key="CSS" value="8" />
           <entry key="HTML" value="48" />
           <entry key="IDEA_MODULE" value="6" />
-          <entry key="JAVA" value="436" />
+          <entry key="JAVA" value="437" />
           <entry key="JSP" value="304" />
           <entry key="JavaScript" value="1" />
           <entry key="XML" value="59" />
@@ -231,9 +93,9 @@
           <entry key="css" value="111" />
           <entry key="dummy" value="20" />
           <entry key="html" value="52" />
-          <entry key="java" value="30822" />
+          <entry key="java" value="30881" />
           <entry key="js" value="255" />
-          <entry key="jsp" value="10809" />
+          <entry key="jsp" value="10927" />
           <entry key="xml" value="3382" />
         </counts>
       </usages-collector>
@@ -241,8 +103,8 @@
         <counts>
           <entry key="CSS" value="111" />
           <entry key="HTML" value="52" />
-          <entry key="JAVA" value="30821" />
-          <entry key="JSP" value="10809" />
+          <entry key="JAVA" value="30880" />
+          <entry key="JSP" value="10927" />
           <entry key="JavaScript" value="255" />
           <entry key="PLAIN_TEXT" value="20" />
           <entry key="SQL" value="21" />
@@ -253,14 +115,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/BoardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+            <state relative-caret-position="681">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -318,11 +189,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+            <state relative-caret-position="202">
+              <caret line="70" column="28" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -335,15 +206,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -449,8 +311,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/rwggad/conn/service/BoardService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/rwggad/conn/dao/BoardDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/sample/sample.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/BoardController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp" />
       </list>
     </option>
   </component>
@@ -651,7 +513,7 @@
     <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545643103275" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545644190080" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring_workspace/spring-petclinic" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -890,13 +752,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169133000" />
+    <option name="totallyTimeSpent" value="170224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="33" width="1455" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25519714" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25519714" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -907,7 +769,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32958803" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.35205993" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.31710362" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31710362" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -962,14 +824,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/BoardController.java</url>
-          <line>38</line>
-          <properties class="com.rwggad.conn.controller.BoardController" method="HomeForm">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1089,13 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1308,17 +1155,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/ClinicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Find#0;class#ClinicController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/rwggad/conn/service/BoardService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
@@ -1372,20 +1208,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/BoardController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/ClinicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+        <state relative-caret-position="19">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Find#0;class#ClinicController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/BoardSystem/HomeForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="37" column="31" lean-forward="true" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="202">
+          <caret line="70" column="28" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/rwggad/conn/controller/BoardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

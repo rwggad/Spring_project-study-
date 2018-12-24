@@ -47,12 +47,12 @@
             <c:otherwise>
                 <c:forEach items="${list}" var="board">
                     <div class="jumbotron">
-                        <div>제목 : ${board.boardTitle}</div> <br>
-                        <div>작성자 :${board.boardWriter}</div> <br>
-                        <div>날짜 : ${board.boardDate}</div>
+                        <div>제목 : ${board.BOARDTITLE}</div> <br>
+                        <div>작성자 :${board.BOARDWRITER}</div> <br>
+                        <div>날짜 : ${board.BOARDDATE}</div>
                         <hr>
-                        <div>${board.boardContent}</div>
-                        <hr>
+                        <div>${board.BOARDCONTENT}</div>
+                        <hr><%--
                         <div style="float: right;">
                             <c:if test="${board.boardWriter.equals(memberSession.memId)}">
                                 <form:form action="${cp}/BoardSystem/Delete" method="post" commandName="board">
@@ -66,7 +66,7 @@
                                     <input class="btn btn-danger" type="submit" value="Delete">
                                 </form:form>
                             </c:if>
-                        </div>
+                        </div>--%>
                     </div>
                 </c:forEach>
             </c:otherwise>

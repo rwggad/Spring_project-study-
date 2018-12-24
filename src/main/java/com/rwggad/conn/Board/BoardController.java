@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
@@ -43,7 +44,15 @@ public class BoardController {
 
     /** Insert */
     @RequestMapping("/InsertForm")
-    public String InsertForm(Board board){
-        return "BoardSystem/InsertForm";
+    public ModelAndView InsertForm(Board board, HttpSession session){
+        ModelAndView mv = new ModelAndView("BoardSystem/InsertForm");
+        mv.addObject("tryMember", session.getAttribute("memberSession"));
+        return mv;
+    }
+    @RequestMapping(value="/Insert", method = RequestMethod.POST)
+    public ModelAndView Insert(Board board) throws Exception{
+        this.service.insertBoard(board);
+        ModelAndView mv = new ModelAndView("redirect:/BoardSystem/HomeForm");
+        return mv;
     }
 }

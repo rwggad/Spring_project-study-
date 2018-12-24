@@ -1,0 +1,9 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: rwgga
+  Date: 2018-12-24
+  Time: 오후 8:48
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page pageEncoding="utf-8"%>
+<form id="commonForm" name="commonForm"></form>

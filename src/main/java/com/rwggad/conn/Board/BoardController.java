@@ -55,4 +55,10 @@ public class BoardController {
         ModelAndView mv = new ModelAndView("redirect:/BoardSystem/HomeForm");
         return mv;
     }
+
+    /** Delete */
+    @RequestMapping("/Delete")
+    public String Delete(Board board){
+        return "redirect:/BoardSystem/HomeForm";
+    }
 }

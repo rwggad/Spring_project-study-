@@ -66,26 +66,8 @@
             comSubmit.submit();
         }
     </script>
-
-    <%--
-    <form:form action="${cp}/BoardSystem/Insert" method="post" commandName="board">
-        <form:hidden path="boardWriter" value="${tryMember.memId}"/>
-        <form:hidden path="boardDate" value="${serverTime}"/>
-        <div><form:input class="btn btn-outline-secondary" path="boardTitle" cssStyle="width: 100%"
-                         placeholder="제목"/></div>
-        <br>
-        <div><form:textarea class="btn btn-outline-secondary" path="boardContent"
-                            cssStyle="width: 100%; height: 350px;"
-                            placeholder="내용"/></div>
-        <br>
-        <hr/>
-        <div style="float:left;">
-            <input class="btn btn-primary" type="submit" value="Insert">
-        </div>
-        <div style="float:right;">
-            <a class="btn btn-primary" href="${cp}/BoardSystem/HomeForm">BACK</a>
-        </div>
-    </form:form>--%>
 </div>
+<br>
+<br>
 </tbody>
 </html>

@@ -7,7 +7,7 @@
       <![CDATA[
         SELECT *
         FROM Board
-        ORDER BY boardId DESC
+        ORDER BY boardID DESC
         ]]>
     </select>
     <insert id="insertBoard"
@@ -16,10 +16,10 @@
           INSERT INTO Board
           VALUES (
             SEQ_TB_BOARD_IDX.NEXTVAL,
-            'test',
-            'test',
-            'test',
-            'test'
+            #{boardWriter},
+            #{boardTitle},
+            #{boardContent},
+            #{boardDate},
             0,
             'NULL'
           )

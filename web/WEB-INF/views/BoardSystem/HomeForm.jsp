@@ -40,21 +40,10 @@
                         <div>날짜 : ${board.BOARDDATE}</div>
                         <hr>
                         <div>${board.BOARDCONTENT}</div>
-                        <hr><%--
-                        <div style="float: right;">
-                            <c:if test="${board.boardWriter.equals(memberSession.memId)}">
-                                <form:form action="${cp}/BoardSystem/Delete" method="post" commandName="board">
-                                    <form:hidden path="boardId" value="${board.boardId}"/>
-                                    <form:hidden path="boardWriter" value="${board.boardWriter}"/>
-                                    <form:hidden path="boardTitle" value="${board.boardTitle}"/>
-                                    <form:hidden path="boardContent" value="${board.boardContent}"/>
-                                    <form:hidden path="boardDate" value="${board.boardDate}"/>
-                                    <form:hidden path="boardCnt" value="${board.boardCnt}"/>
-                                    <form:hidden path="ipAddress" value="${board.ipAddress}"/>
-                                    <input class="btn btn-danger" type="submit" value="Delete">
-                                </form:form>
-                            </c:if>
-                        </div>--%>
+                        <hr>
+                        <div style="float: right">
+                            <a class="btn btn-danger" href="#this" id="delete">DELETE</a>
+                        </div>
                     </div>
                 </c:forEach>
             </c:otherwise>
@@ -63,6 +52,22 @@
     <div style="float: right;">
         <button class="btn btn-success" onclick="location.href='${cp}/'">GO MAIN</button>
     </div>
+    <%@ include file="/WEB-INF/include/include-body.jspf"%>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#delete").on("click", function (e) {
+                e.preventDefault()
+                fn_deleteBoard();
+            });
+
+        });
+        function fn_deleteBoard() {
+            var ComSubmit = new ComSubmit();
+            ComSubmit.setUrl("<c:url value="/BoardSystem/Delete"/>");
+            ComSubmit.addParam("boardId", ${board.BOARDTITLE})
+            ComSubmit.submit();
+        };
+    </script>
 </div>
 <br>
 <br>

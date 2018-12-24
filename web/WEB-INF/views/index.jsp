@@ -56,6 +56,7 @@
             <br>
             <a class="btn btn-light" href="${cp}/SearchSystem/HomeForm">Find Word System</a> <br> <br>
             <a class="btn btn-light" href="${cp}/BoardSystem/HomeForm">Board System</a> <br> <br>
+            <a class="btn btn-light" href="${cp}/PetClinic/HomeForm">My PetClinic</a> <br> <br>
         </c:otherwise>
     </c:choose>
 </div>

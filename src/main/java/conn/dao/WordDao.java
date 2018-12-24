@@ -1,21 +1,16 @@
 package conn.dao;
 
-import conn.Model.WordSet;
-import conn.interfaces.IWordDao;
+import conn.Model.WordModel.WordSet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 import javax.sql.DataSource;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 
@@ -24,7 +19,7 @@ import java.util.List;
 //@Service
 //@Component
 @Repository
-public class WordDao implements IWordDao {
+public class WordDao {
     /**
      * Spring 설정 파일을 이용한 DataSource*/
     private JdbcTemplate template;

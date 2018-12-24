@@ -1,16 +1,14 @@
 package conn.service;
 
-import conn.Model.WordSet;
+import conn.Model.WordModel.WordSet;
 import conn.dao.WordDao;
-import conn.interfaces.IWordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class WordService implements IWordService {
+public class WordService {
 
     @Autowired
     private WordDao dao; // dao 자동 주입

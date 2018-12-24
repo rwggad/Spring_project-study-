@@ -1,13 +1,12 @@
 package conn.service;
 
-import conn.Model.Member;
+import conn.Model.LoginModel.Member;
 import conn.dao.MemberDao;
-import conn.interfaces.IMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class MemberService implements IMemberService {
+public class MemberService {
 
     @Autowired
     MemberDao dao;

@@ -1,15 +1,14 @@
 package conn.service;
 
-import conn.Model.Board;
+import conn.Model.BaordModel.Board;
 import conn.dao.BoardDao;
-import conn.interfaces.IBoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public class BoardService implements IBoardService {
+public class BoardService {
 
     @Autowired
     private BoardDao boardDao;
